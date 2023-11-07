@@ -30,6 +30,7 @@ $base-mobile-text-xxl-font-size: 5.2rem;
 
 
 $base-space: .8rem;
+$space-12: 1.2rem;
 $space-16: 1.6rem;
 $space-24: 2.4rem;
 $space-32: 3.2rem;
@@ -39,15 +40,23 @@ $space-96: 9.6rem;
 $space-192: 19.2rem;
 
 
+
 //font -----
-$font-inter: "Inter";
-$font-family: -apple-system, BlinkMacSystemFont, $font-inter 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+$font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+  "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
+
+$font-inter: "Inter", $font-fallback;
+
+
+
 
 
 //color -----
 $black: #000;
 $white: #FFF;
 
-$blue-time: #355F8B;
+$primary-theme-1: #DA7D4A;
+$text-primary: #334155;
+$text-secondary :#94A3B8;
+$Bg-color-theme-1: #FDFCFB;
+$Bg-color-theme-2: #F7ECE1;

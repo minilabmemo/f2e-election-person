@@ -4,7 +4,13 @@ import { Header } from './layouts/header';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <div className="base">
+        <div className="container">
+          <Header></Header>
+
+        </div>
+      </div>
+
     </div>
   );
 }

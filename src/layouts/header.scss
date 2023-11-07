@@ -1,15 +1,45 @@
 @import '../styles/global_all.scss';
 
 
-.wrap {
-  background-color: $blue-time;
-  height: 35px;
+.header {
+  height: 9.9rem;
+  font-family: $font-inter;
+  background-color: $white;
+}
+
+.banner {
+
+  height: 6.7rem;
+  display: flex;
+  justify-content: space-between;
 
 }
 
 .logo-block {
   display: flex;
-  width: 100px;
-  height: 35px;
+  width: 280px;
 
+
+}
+
+.nav-block {
+  color: $text-primary;
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.social-block {
+  display: flex;
+  width: 128px;
+  justify-content: space-between;
+  align-items: center;
+
+  .social-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
 }
