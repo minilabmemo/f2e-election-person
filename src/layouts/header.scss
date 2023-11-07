@@ -43,16 +43,110 @@
 
 .banner {
   display: flex;
-  justify-content: center;
+  align-items: center;
   height: 85.8rem;
+  flex-direction: column;
+  gap: $space-16;
+
+  .photo {
+    height: 53.8rem;
+    ;
+  }
 
   .title {
+    margin-top: $space-96;
     font-size: $text-xxl-font-size;
     font-family: $font-mantou;
-    background: linear-gradient(90deg, #E6793B 1.54%, #FF4185 97.86%);
-    background: var(--Gradient, linear-gradient(90deg, #E5793B 1.54%, #FF4185 97.86%));
+    background: $primary-gradient;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    line-height: 105%;
+    /* 100.8px */
+    letter-spacing: .2rem;
   }
+
+  .subtitle {
+    display: flex;
+    height: 8.4rem;
+    align-items: center;
+
+  }
+
+  .tag {
+    padding: $space-12 $space-16;
+    height: 5.8rem;
+    display: flex;
+    align-items: center;
+    border-radius: $space-16;
+
+
+    .text {
+      color: var(--default-white, #FFF);
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+
+  }
+
+  .tag-person {
+    padding: $space-12 $space-16;
+    display: flex;
+    align-items: center;
+    border-radius: $space-16;
+
+    .number {
+      border-radius: 367.647px;
+      background: $primary-gradient;
+      display: flex;
+      width: 5rem;
+      height: 5rem;
+      // padding: 7.353px 16.912px;
+      padding: $base-space $space-16;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 7.353px;
+      color: $white;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 150%;
+      /* 48px */
+    }
+
+    .name {
+      color: $primary-theme-1;
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      /* 60px */
+      letter-spacing: -0.8px;
+    }
+  }
+}
+
+.bg-primary {
+  background: $text-primary;
+}
+
+.shadow {
+  border: 1px solid $white;
+  background: rgba(255, 255, 255, 0.90);
+  box-shadow: 0px 4px 12px 0px rgba(163, 180, 203, 0.20);
+}
+
+.news-ticker {
+  background-color: $primary-theme-1;
+  height: 8.7rem;
+  padding: 10px;
+  width: 100%;
+
 }
