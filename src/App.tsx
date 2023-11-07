@@ -1,4 +1,5 @@
 
+import { Content } from './layouts/content';
 import { Header } from './layouts/header';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
       <div className="base">
         <div className="container">
           <Header></Header>
-
+          <Content></Content>
         </div>
       </div>
 
