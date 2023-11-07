@@ -107,10 +107,12 @@
   height: 8.7rem;
   width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   overflow: hidden;
 
   .text {
+    white-space: nowrap;
     font-family: $font-mantou;
     font-size: $space-64;
     font-weight: 400;
@@ -118,7 +120,7 @@
     letter-spacing: .2rem;
     text-align: left;
     color: $white;
-    animation: marquee 10s linear none;
+    animation: marquee 10s linear infinite;
   }
 }
 
