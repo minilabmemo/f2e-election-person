@@ -1,0 +1,29 @@
+*, *::before, *::after {
+  box-sizing: border-box
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+
+}
+
+a.link:visited {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+//debug use
+// * {
+//   outline: 2px solid red;
+// }
+
+// * {
+//   background-color: rgb(0 100 0/0.1);
+// }
