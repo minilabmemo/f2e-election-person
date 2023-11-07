@@ -1,6 +1,8 @@
 
 import "./content.scss";
 import banner_photo from "../assets/images/banner_photo.svg"
+import policy_1 from "../assets/images/policy_1.svg"
+
 
 
 export const Content = () => {
@@ -19,7 +21,16 @@ export const Content = () => {
         <div className="photo"><img src={banner_photo} alt="banner_photo" /></div>
       </div>
       <div className="news-ticker">
-        <div className="text">為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望</div></div>
+        <div className="text">為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望</div>
+      </div>
+      <div className="section bg-orange p-tb-144 " id="policy">
+        <div className="photo_policy">   <img src={policy_1} alt="policy_1" /></div>
+
+      </div>
+      <div className="section bg-white  p-tb-144 ">
+        <div className="photo_policy">   <img src={policy_1} alt="policy_1" /></div>
+
+      </div>
     </>
   );
 };

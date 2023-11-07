@@ -18,11 +18,11 @@ export const Header = () => {
       <div className='head  p-tb-12 p-lr-48'>
         <div className="logo-block"><img src={brand} alt="brand" /></div>
         <div className='nav-block'>
-          <div className="nav m-lr-8 p-8">候選人主張</div>
-          <div className="nav m-lr-8 p-8">最新活動</div>
-          <div className="nav m-lr-8 p-8">政策議題</div>
-          <div className="nav m-lr-8 p-8">小額捐款</div>
-          <div className="nav m-lr-8 p-8">民眾服務信箱</div>
+          <a className="nav link m-lr-8 p-8" href="#policy"> 候選人主張</a>
+          <a className="nav link m-lr-8 p-8" href="#policy">最新活動</a>
+          <a className="nav link m-lr-8 p-8" href="#policy">政策議題</a>
+          <a className="nav link m-lr-8 p-8" href="#policy">小額捐款</a>
+          <a className="nav link m-lr-8 p-8" href="#policy">民眾服務信箱</a>
         </div>
         <div className='social-block'>
           <img src={icon_fb} alt="icon_fb" className="social-icon" />
