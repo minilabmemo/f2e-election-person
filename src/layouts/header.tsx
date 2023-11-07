@@ -14,7 +14,7 @@ export const Header = () => {
 
   return (
     <div className='header  p-tb-12 p-lr-48'>
-      <div className='banner  p-tb-12 p-lr-48'>
+      <div className='head  p-tb-12 p-lr-48'>
         <div className="logo-block"><img src={brand} alt="brand" /></div>
         <div className='nav-block'>
           <div className="nav m-lr-8 p-8">候選人主張</div>
@@ -29,6 +29,9 @@ export const Header = () => {
           <img src={icon_yt} alt="icon_yt" className="social-icon" />
         </div>
 
+      </div>
+      <div className="banner">
+        <div className="title">台灣的明天 喵先鋪路</div>
       </div>
     </div>
   );

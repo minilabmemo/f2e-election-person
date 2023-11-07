@@ -7,19 +7,15 @@
   background-color: $white;
 }
 
-.banner {
-
+.head {
   height: 6.7rem;
   display: flex;
   justify-content: space-between;
-
 }
 
 .logo-block {
   display: flex;
   width: 280px;
-
-
 }
 
 .nav-block {
@@ -41,5 +37,22 @@
   .social-icon {
     width: 3.2rem;
     height: 3.2rem;
+  }
+}
+
+
+.banner {
+  display: flex;
+  justify-content: center;
+  height: 85.8rem;
+
+  .title {
+    font-size: $text-xxl-font-size;
+    font-family: $font-mantou;
+    background: linear-gradient(90deg, #E6793B 1.54%, #FF4185 97.86%);
+    background: var(--Gradient, linear-gradient(90deg, #E5793B 1.54%, #FF4185 97.86%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

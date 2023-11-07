@@ -21,11 +21,13 @@ $type-mobile-heading-h6-font-size: 1.6rem;
 
 $base-text-font-size: 1.8rem;
 $base-text-small-font-size: 1.4rem;
-$base-text-xxl-font-size: 6.4rem;
+$base-text-xl-font-size: 6.4rem;
+
+$text-xxl-font-size: 9.6rem;
 
 $base-mobile-text-font-size: 1.6rem;
 $base-mobile-text-small-font-size: 1.4rem;
-$base-mobile-text-xxl-font-size: 5.2rem;
+$base-mobile-text-xl-font-size: 5.2rem;
 
 
 
@@ -46,6 +48,7 @@ $font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
   "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
 
 $font-inter: "Inter", $font-fallback;
+$font-mantou: "Mantou Sans", $font-fallback;
 
 
 
