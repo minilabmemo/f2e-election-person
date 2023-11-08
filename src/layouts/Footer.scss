@@ -1,0 +1,91 @@
+@import '../styles/global_all.scss';
+
+footer {
+  display: flex;
+  padding: $space-64 14.375%;
+  align-items: flex-start;
+  gap: $space-16;
+  align-self: stretch;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-16;
+    flex: 1 0 0;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-16;
+    flex: 1 0 0;
+
+    .title {
+
+      text-align: center;
+      font-size: $font-size-24;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      /* 36px */
+    }
+
+    .infos {
+      font-size: $space-16;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      /* 24px */
+    }
+  }
+}
+
+
+.tag-person-small {
+
+  display: flex;
+  align-items: center;
+
+  .number {
+    border-radius: 235.294px;
+    background: $primary-gradient;
+    display: flex;
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 4.706px 10.824px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.706px;
+    color: $white;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: $font-size-20;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    /* 48px */
+  }
+
+  .name {
+    color: $primary-theme-1;
+    font-size: $font-size-28;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 60px */
+    letter-spacing: -0.8px;
+  }
+}
+
+
+.circle-icon {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50rem;
+  background: $white;
+}

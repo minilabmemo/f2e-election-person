@@ -9,6 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: $base-body-font-size;
+  color: $text-primary;
 
   h1 {
     @include set-font-size($unit-heading-h1-font-size);

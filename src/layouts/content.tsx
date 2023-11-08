@@ -9,7 +9,18 @@ import p2_photo from "../assets/images/p2_photo.png"
 import p3_photo from "../assets/images/p3_photo.png"
 import donate_photo from "../assets/images/donate_photo.png"
 import Button from "../components/Button";
+import { person_name, person_number } from "../utils/const_config";
 export const Content = () => {
+
+
+  const Person = () => {
+    return (
+      <div className="tag-person shadow">
+        <div className="number m-r-16">{person_number}</div>
+        <div className="name">{person_name}</div>
+      </div>
+    )
+  }
 
   return (
     <main>
@@ -18,10 +29,7 @@ export const Content = () => {
         <div className="title">台灣的明天 喵先鋪路</div>
         <div className="subtitle ">
           <div className="tag bg-primary m-r-16"> <div className="text">2024 立委參選人</div></div>
-          <div className="tag-person shadow">
-            <div className="number m-r-16">3</div>
-            <div className="name">喵立翰 Miao Li-Han</div>
-          </div>
+          <Person />
         </div>
         <div className="photo"><img src={banner_photo} alt="banner_photo" /></div>
       </div>
@@ -99,10 +107,7 @@ export const Content = () => {
       <section className="bg-white  p-y-104 " >
 
         <div className="title"> 台灣的明天 喵先鋪路</div>
-        <div className="tag-person ">
-          <div className="number m-r-16">3</div>
-          <div className="name">喵立翰 Miao Li-Han</div>
-        </div>
+        <Person />
       </section>
     </main>
   );
