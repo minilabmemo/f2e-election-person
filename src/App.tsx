@@ -1,6 +1,6 @@
 
-import { Content } from './layouts/content';
-import { Header } from './layouts/header';
+import { Content } from './layouts/Content';
+import { Header } from './layouts/Header';
 
 function App() {
   return (

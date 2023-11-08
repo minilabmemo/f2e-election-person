@@ -5,7 +5,7 @@ import icon_fb from "../assets/images/icon_fb.svg"
 import icon_yt from "../assets/images/icon_yt.svg"
 import icon_ig from "../assets/images/icon_ig.svg"
 
-import "./header.scss";
+import "./Header.scss";
 
 
 

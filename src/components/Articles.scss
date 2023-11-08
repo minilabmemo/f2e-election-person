@@ -1,0 +1,43 @@
+@import '../styles/global_all.scss';
+
+
+
+.articles {
+  display: flex;
+  width: 68.75%;
+  height: 53.8rem;
+  gap: $space-24;
+
+  .main, .aside {
+    width: 50%;
+    height: inherit;
+  }
+
+  .main.photo {
+    height: 76%;
+  }
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+    gap: $space-24;
+
+    .article {
+      display: flex;
+      gap: $space-16;
+    }
+
+    .photo {
+      width: 33%;
+    }
+
+    .content-group {
+      width: 67%
+    }
+
+
+  }
+
+  .title {}
+
+}
