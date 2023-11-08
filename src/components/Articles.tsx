@@ -1,5 +1,6 @@
 import "./Articles.scss";
 import { items } from "../utils/articles_config";
+import Button from "./Button";
 
 const Articles = () => {
   return (
@@ -8,8 +9,8 @@ const Articles = () => {
         {items.slice(0, 1).map((item, index) => (
           <div className="article" key={index}>
             <div className="photo">{item.imageNode}</div>
-            <div className="time">{item.time}</div>
-            <h5 className="title">{item.title}</h5>
+            <div className="time m-t-16">{item.time}</div>
+            <h5 className="m-y-8">{item.title}</h5>
             <div className="content">{item.content}</div>
           </div>
         ))}
@@ -20,12 +21,14 @@ const Articles = () => {
             <div className="photo">{item.imageNode}</div>
             <div className="content-group">
               <div className="time">{item.time}</div>
-              <h5 className="title">{item.title}</h5>
+              <h5 className="m-y-8">{item.title}</h5>
               <div className="content">{item.content}</div>
             </div>
           </div>
         ))}
-        <div className="more">查看更多</div>
+        <div>   <Button className="more black">查看更多</Button></div>
+
+
       </div>
     </div>
   );

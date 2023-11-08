@@ -14,6 +14,10 @@ body {
     @include set-font-size($unit-heading-h1-font-size);
   }
 
+  h5 {
+    @include set-font-size($unit-heading-h5-font-size);
+  }
+
   h6 {
     @include set-font-size($unit-heading-h6-font-size);
   }
@@ -22,6 +26,10 @@ body {
   @include phone-screen {
     h1 {
       @include set-font-size($unit-heading-h1-font-size-mobile);
+    }
+
+    h5 {
+      @include set-font-size($unit-heading-h5-font-size-mobile);
     }
 
     h6 {

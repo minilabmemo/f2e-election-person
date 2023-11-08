@@ -3,6 +3,7 @@
 
 
 .articles {
+  color: $text-primary;
   display: flex;
   width: 68.75%;
   height: 53.8rem;
@@ -38,6 +39,29 @@
 
   }
 
-  .title {}
+  .time {
+    font-size: $text-small-font-size-14;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $gray;
+  }
 
+  .content {
+    font-size: $font-size-16;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .more {
+    font-size: $font-size-16;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
 }

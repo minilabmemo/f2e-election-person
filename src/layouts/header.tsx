@@ -20,10 +20,10 @@ export const Header = () => {
         <nav className="menu">
           <ul className='link-list'>
             <li className="link m-x-8 p-8"><a href="#idea"> 候選人主張</a></li>
-            <li className="link m-x-8 p-8"><a href="#activity">最新活動</a></li>
+            <li className="link m-x-8 p-8"><a href="#events">最新活動</a></li>
             <li className="link m-x-8 p-8"><a href="#policy">政策議題</a></li>
-            <li className="link m-x-8 p-8"><a href="#policy">小額捐款</a></li>
-            <li className="link m-x-8 p-8"><a href="#policy">民眾服務信箱</a></li>
+            <li className="link m-x-8 p-8"><a href="#others">小額捐款</a></li>
+            <li className="link m-x-8 p-8"><a href="#others">民眾服務信箱</a></li>
           </ul>
         </nav>
         <div className='social-block'>

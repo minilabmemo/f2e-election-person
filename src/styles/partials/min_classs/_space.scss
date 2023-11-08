@@ -35,10 +35,18 @@
   margin-right: .8rem;
 }
 
+.m-y-8 {
+  margin-top: .8rem;
+  margin-bottom: .8rem;
+}
 
 
-.m-r-16 {
-  margin-right: $space-16;
+.m-t-16 {
+  margin-top: $space-16;
+}
+
+.m-t-64 {
+  margin-top: $space-64;
 }
 
 .m-r-16 {

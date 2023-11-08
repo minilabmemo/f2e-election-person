@@ -13,19 +13,19 @@ $font-size-16: 1.6rem;
 
 
 //依據設計稿定義，實際上沒有全用到對應h1~h5標籤
-$unit-heading-h1-font-size: '40';
-$unit-heading-h2-font-size: '32';
-$unit-heading-h3-font-size: '28';
-$unit-heading-h4-font-size: '24';
-$unit-heading-h5-font-size: '20';
-$unit-heading-h6-font-size: '16';
+$unit-heading-h1-font-size: 40;
+$unit-heading-h2-font-size: 32;
+$unit-heading-h3-font-size: 28;
+$unit-heading-h4-font-size: 24;
+$unit-heading-h5-font-size: 20;
+$unit-heading-h6-font-size: 16;
 
-$unit-heading-h1-font-size-mobile: '32';
-$unit-heading-h2-font-size-mobile: '24';
-$unit-heading-h3-font-size-mobile: '24';
-$unit-heading-h4-font-size-mobile: '24';
-$unit-heading-h5-font-size-mobile: '20';
-$unit-heading-h6-font-size-mobile: '16';
+$unit-heading-h1-font-size-mobile: 32;
+$unit-heading-h2-font-size-mobile: 24;
+$unit-heading-h3-font-size-mobile: 24;
+$unit-heading-h4-font-size-mobile: 24;
+$unit-heading-h5-font-size-mobile: 20;
+$unit-heading-h6-font-size-mobile: 16;
 
 $text-font-size-18: 1.8rem;
 $text-small-font-size-14: 1.4rem;
@@ -64,6 +64,8 @@ $font-mantou: "Mantou Sans", $font-fallback;
 //color -----
 $black: #000;
 $white: #FFF;
+$gray: #94A3B8;
+
 
 $primary-gradient: linear-gradient(90deg, #E6793B 1.54%, #FF4185 97.86%);
 $primary-theme-1: #DA7D4A;
