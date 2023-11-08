@@ -1,11 +1,14 @@
 
 import "./Content.scss";
 import banner_photo from "../assets/images/banner.png"
-import policy_1 from "../assets/images/policy_1.svg"
+import policy_1 from "../assets/images/policy_1.svg" //TODO
 
 import Articles from "../components/Articles";
+import p1_photo from "../assets/images/p1_photo.png"
+import p2_photo from "../assets/images/p2_photo.png"
+import p3_photo from "../assets/images/p3_photo.png"
+import donate_photo from "../assets/images/donate_photo.png"
 import Button from "../components/Button";
-
 export const Content = () => {
 
   return (
@@ -43,29 +46,63 @@ export const Content = () => {
         <div className="m-t-64"></div>
         <div className="policies">
           <div className="policy">
-            <h5>為毛孩子謀福利！
-              推動寵物醫療保障方案</h5>
-            <div className="photo"></div>
+            <div className="m-x-16 m-b-16">
+              <h5 className="m-0">為毛孩子謀福利！</h5>
+              <h5 className="m-0">推動寵物醫療保障方案</h5>
+            </div>
+
+            <div className="photo"> <img src={p1_photo} alt="policy_photo" /></div>
           </div>
           <div className="policy">
-            <h5>打造休閒天堂！
-              推廣寵物休閒與娛樂場所</h5>
-            <div className="photo"></div>
+            <div className="m-x-16 m-b-16">
+              <h5 className="m-0">打造休閒天堂！</h5>
+              <h5 className="m-0">  推廣寵物休閒與娛樂場所</h5>
+            </div>
+            <div className="photo"><img src={p2_photo} alt="policy_photo" /></div>
           </div>
           <div className="policy">
-            <h5>推廣寵物飼養教育，讓愛更加專業</h5>
-            <div className="photo"></div></div>
+            <div className="m-x-16 m-b-16">
+              <h5 className="m-0">推廣寵物飼養教育，讓愛更加專業</h5>
+            </div>
+            <div className="photo"><img src={p3_photo} alt="policy_photo" /></div>
+          </div>
         </div>
       </section>
 
       <section className="bg-white  p-y-104 " id="others">
+        <div className="cards text-white ">
+          <div className="card bg-orang-dark">
+            <div className="title-group">
+              <div className="title ">小額支持喵喵</div>
+              <div className="subtitle">您的小筆捐款，是每隻毛孩未來的大大動力！</div>
 
-        123
+            </div>
+            <div className="more">
+              <div><Button className="bg-white  text-primary ">小額捐款</Button></div>
+              <div className="photo"><img src={donate_photo} alt="donate_photo" /></div>
+            </div>
+
+          </div>
+          <div className="card bg-primary">
+            <div className="title-group">
+              <div className="title">民眾服務信箱</div>
+              <div className="subtitle">親愛的鄉親，每一位市民的意見都是我們社區前進的原動力</div>
+
+            </div>
+            <div className="more">
+              <div><Button className="bg-white text-primary ">填寫表單</Button></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="bg-white  p-y-104 " >
 
         <div className="title"> 台灣的明天 喵先鋪路</div>
+        <div className="tag-person ">
+          <div className="number m-r-16">3</div>
+          <div className="name">喵立翰 Miao Li-Han</div>
+        </div>
       </section>
     </main>
   );

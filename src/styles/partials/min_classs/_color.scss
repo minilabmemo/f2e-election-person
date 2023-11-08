@@ -2,11 +2,23 @@
   background: $text-primary;
 }
 
+.bg-orang-dark {
+  background: $primary-theme-1;
+
+}
 
 .bg-orange {
   background: $Bg-color-theme-2;
 }
 
 .bg-white {
-  background: $white
+  background: $white;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-primary {
+  color: $text-primary;
 }
