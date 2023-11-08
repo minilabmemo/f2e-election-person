@@ -5,13 +5,23 @@
 .articles {
   color: $text-primary;
   display: flex;
+  flex-wrap: wrap;
   width: 68.75%;
-  height: 53.8rem;
   gap: $space-24;
 
+  @include ipad-screen {
+    gap: 0;
+
+  }
+
   .main, .aside {
-    width: 50%;
+    width: calc(50% - $space-24/2);
     height: inherit;
+
+    @include ipad-screen {
+      width: 100%;
+
+    }
   }
 
   .main.photo {
