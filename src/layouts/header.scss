@@ -1,7 +1,7 @@
 @import '../styles/global_all.scss';
 
 
-.header {
+header {
   height: 9.9rem;
   font-family: $font-inter;
   background-color: $white;
@@ -18,13 +18,13 @@
   width: 280px;
 }
 
-.nav-block {
+.link-list {
 
   color: $text-primary;
   display: flex;
 }
 
-.nav {
+.link {
   display: flex;
   align-items: center;
 }

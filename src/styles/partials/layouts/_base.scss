@@ -11,13 +11,17 @@ body {
   font-size: $base-body-font-size;
 
   h1 {
-    font-size: $type-heading-h1-font-size
+    @include set-font-size($unit-heading-h1-font-size);
   }
+
+
 
   @include phone-screen {
     h1 {
-      font-size: $type-mobile-heading-h1-font-size;
+      @include set-font-size($unit-heading-h1-font-size-mobile);
     }
+
+
 
   }
 }

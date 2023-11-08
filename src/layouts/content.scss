@@ -17,7 +17,7 @@
 
   .title {
     margin-top: $space-96;
-    font-size: $text-xxl-font-size;
+    font-size: $text-xxl-font-size-96;
     font-family: $font-mantou;
     background: $primary-gradient;
     background-clip: text;
@@ -45,7 +45,7 @@
 
     .text {
       color: var(--default-white, #FFF);
-      font-size: 28px;
+      font-size: $font-size-28;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -76,7 +76,7 @@
       text-align: center;
       font-feature-settings: 'clig' off, 'liga' off;
 
-      font-size: 3.2rem;
+      font-size: $font-size-32;
       font-style: normal;
       font-weight: 900;
       line-height: 150%;
@@ -85,7 +85,7 @@
 
     .name {
       color: $primary-theme-1;
-      font-size: 4rem;
+      font-size: $font-size-40;
       font-style: normal;
       font-weight: 700;
       line-height: 150%;
@@ -114,7 +114,7 @@
   .text {
     white-space: nowrap;
     font-family: $font-mantou;
-    font-size: $space-64;
+    font-size: $text-xl-font-size-64;
     font-weight: 400;
     line-height: 6.7rem;
     letter-spacing: .2rem;
@@ -127,4 +127,9 @@
 .photo_policy {
   width: 68%;
   height: 52.3rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
 }
