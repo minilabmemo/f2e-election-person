@@ -14,16 +14,16 @@ export const Header = () => {
 
 
   return (
-    <header className='header  p-tb-12 p-lr-48'>
-      <div className='head  p-tb-12 p-lr-48'>
+    <header className='header  p-y-12 p-x-48'>
+      <div className='head  p-y-12 p-x-48'>
         <div className="logo-block"><img src={brand} alt="brand" /></div>
         <nav className="menu">
           <ul className='link-list'>
-            <li className="link m-lr-8 p-8"><a href="#idea"> 候選人主張</a></li>
-            <li className="link m-lr-8 p-8"><a href="#policy">最新活動</a></li>
-            <li className="link m-lr-8 p-8"><a href="#policy">政策議題</a></li>
-            <li className="link m-lr-8 p-8"><a href="#policy">小額捐款</a></li>
-            <li className="link m-lr-8 p-8"><a href="#policy">民眾服務信箱</a></li>
+            <li className="link m-x-8 p-8"><a href="#idea"> 候選人主張</a></li>
+            <li className="link m-x-8 p-8"><a href="#activity">最新活動</a></li>
+            <li className="link m-x-8 p-8"><a href="#policy">政策議題</a></li>
+            <li className="link m-x-8 p-8"><a href="#policy">小額捐款</a></li>
+            <li className="link m-x-8 p-8"><a href="#policy">民眾服務信箱</a></li>
           </ul>
         </nav>
         <div className='social-block'>

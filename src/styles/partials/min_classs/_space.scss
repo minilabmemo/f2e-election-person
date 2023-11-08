@@ -1,23 +1,41 @@
-.p-tb-12 {
+.p-y-8 {
+  padding-top: $space-8;
+  padding-bottom: $space-8;
+}
 
+
+.p-y-12 {
   padding-top: $space-12;
   padding-bottom: $space-12;
 }
 
-.p-lr-48 {
-  padding-left: $space-48;
-  padding-right: $space-48;
-
+.p-y-104 {
+  padding-top: 10.4rem;
+  padding-bottom: 10.4rem;
 }
 
-.m-lr-8 {
+.p-x-12 {
+  padding-left: $space-12;
+  padding-right: $space-12;
+}
+
+
+.p-x-48 {
+  padding-left: $space-48;
+  padding-right: $space-48;
+}
+
+
+.p-8 {
+  padding: $space-8;
+}
+
+.m-x-8 {
   margin-left: .8rem;
   margin-right: .8rem;
 }
 
-.p-8 {
-  padding: $base-space;
-}
+
 
 .m-r-16 {
   margin-right: $space-16;
@@ -25,9 +43,4 @@
 
 .m-r-16 {
   margin-right: $space-16;
-}
-
-.p-tb-144 {
-  padding-top: 14.4rem;
-  padding-bottom: 14.4rem;
 }
