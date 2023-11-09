@@ -19,6 +19,16 @@
   }
 }
 
+
+.space-title {
+  margin-bottom: $space-16;
+
+  @include ipad-screen {
+    margin-bottom: $space-24;
+  }
+}
+
+
 .p-x-12 {
   padding-left: $space-12;
   padding-right: $space-12;
@@ -35,9 +45,6 @@
   padding: $space-8;
 }
 
-.m-0 {
-  margin: 0;
-}
 
 
 .m-x-8 {
@@ -81,10 +88,6 @@
 
 .m-r-16 {
   margin-right: $space-16;
-}
-
-.m-b-16 {
-  margin-bottom: $space-16;
 }
 
 

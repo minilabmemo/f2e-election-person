@@ -28,7 +28,7 @@ export const Content = () => {
       <div className="banner">
         <div className="m-t-large"></div>
         <h1 className="clip-text matou title-wrap"> <div>台灣的明天 </div> <div>&nbsp;喵先鋪路</div></h1>
-        <div className="wrap ">
+        <div className="group ">
           <div className="tag bg-primary m-r-16"> <div className="text">2024 立委參選人</div></div>
           <Person />
         </div>
@@ -42,7 +42,7 @@ export const Content = () => {
         <div className="idea-wrap content-wrap">
           <div className="left">
             <div className="title-group">
-              <h6 className="tag-small p-x-12 p-y-8 m-0">ADVOCATE</h6>
+              <h6 className="tag-small p-x-12 p-y-8">ADVOCATE</h6>
               <h2 className="clip-text matou"> 候選人主張</h2>
             </div>
 
@@ -70,22 +70,22 @@ export const Content = () => {
         <div className="policies content-wrap">
           <div className="policy">
             <div className="group ">
-              <h4 className="m-0">為毛孩子謀福利！</h4>
-              <h4 className="m-0">推動寵物醫療保障方案</h4>
+              <h4>為毛孩子謀福利！</h4>
+              <h4>推動寵物醫療保障方案</h4>
             </div>
 
             <div className="photo"> <img src={p1_photo} alt="policy_photo" /></div>
           </div>
           <div className="policy">
             <div className="group ">
-              <h4 className="m-0">打造休閒天堂！</h4>
-              <h4 className="m-0">  推廣寵物休閒與娛樂場所</h4>
+              <h4>打造休閒天堂！</h4>
+              <h4>  推廣寵物休閒與娛樂場所</h4>
             </div>
             <div className="photo"><img src={p2_photo} alt="policy_photo" /></div>
           </div>
           <div className="policy">
             <div className="group  fixed-h">
-              <h4 className="m-0">推廣寵物飼養教育，讓愛更加專業</h4>
+              <h4>推廣寵物飼養教育，讓愛更加專業</h4>
 
             </div>
             <div className="photo"><img src={p3_photo} alt="policy_photo" /></div>
@@ -121,7 +121,11 @@ export const Content = () => {
       </section>
 
       <section className="bg-white  section-space " >
-        <h2 className="clip-text matou m-b-16"> 台灣的明天 喵先鋪路</h2>
+        <h2 className="clip-text matou slogan-wrap">
+          <div>台灣的明天&nbsp;</div>
+          <div> 喵先鋪路</div>
+        </h2>
+        <div className="space-title"></div>
         <Person />
       </section>
 

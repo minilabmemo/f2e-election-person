@@ -19,7 +19,7 @@ $phone-576: 576px;
 $phone-480: 480px;
 
 $phone-360: 360px;
-
+$phone-375: 375px;
 $phone-320: 320px;
 
 
@@ -39,11 +39,20 @@ $phone-320: 320px;
   }
 }
 
-@mixin phone-screen {
+
+@mixin phone-screen-576 {
   @media screen and (max-width: $phone-576) {
     @content;
   }
 }
+
+
+@mixin phone-screen {
+  @media screen and (max-width: $phone-375) {
+    @content;
+  }
+}
+
 
 @mixin phone-small-screen {
   @media screen and (max-width: $phone-360) {

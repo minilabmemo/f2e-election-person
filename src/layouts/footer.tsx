@@ -28,7 +28,7 @@ export const Footer = () => {
       </div>
 
       <div className="right">
-        <h5 className='title m-0'>競選總部</h5>
+        <h5 className='title'>競選總部</h5>
         <div className="infos">
           <div className="text">辦公室地址：喵星區，毛茸茸大道88號，喵喵大樓3樓</div>
           <div className="text">電話：(02) 888-5678</div>

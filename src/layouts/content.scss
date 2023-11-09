@@ -50,15 +50,19 @@ main {
     }
   }
 
-  .wrap {
+  .group {
     display: flex;
     height: 8.4rem;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     @include phone-screen {
-      flex-wrap: wrap;
-      justify-content: center;
       height: 12rem;
+    }
+
+    @include phone-x-small-screen {
+      height: 20rem;
     }
 
   }
@@ -123,16 +127,14 @@ main {
 
   .name {
     color: $primary-theme-1;
-    font-size: $font-size-40;
+
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
     /* 60px */
     letter-spacing: -0.8px;
 
-    @include ipad-screen {
-      font-size: $font-size-28;
-    }
+
   }
 }
 
@@ -272,7 +274,7 @@ section {
       display: flex;
       width: 100%;
       flex-wrap: wrap;
-      height: 8.8rem;
+
       flex-direction: column;
 
     }
@@ -363,4 +365,11 @@ section {
 .text-bold-black {
   color: $text-primary;
   font-weight: 700;
+}
+
+.slogan-wrap {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  ;
 }

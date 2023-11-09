@@ -66,6 +66,10 @@ h1:not(.matou) {
   @include ipad-screen {
     @include set-font-size($unit-heading-h1-font-size-inter-mobile);
   }
+
+  @include phone-x-small-screen {
+    @include set-font-size($unit-heading-h3-font-size-inter-mobile);
+  }
 }
 
 h3:not(.matou) {

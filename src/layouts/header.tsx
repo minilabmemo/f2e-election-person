@@ -14,8 +14,8 @@ export const Header = () => {
 
 
   return (
-    <header className='header  p-y-12 p-x-48'>
-      <div className='head  p-y-12 p-x-48'>
+    <header className='header  '>
+      <div className='head '>
         <div className="logo-block"><img src={brand} alt="brand" /></div>
         <nav className="menu">
           <ul className='link-list'>
