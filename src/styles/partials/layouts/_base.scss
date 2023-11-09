@@ -23,4 +23,27 @@ body {
   width: clamp(320px, 100%, 1920px);
   margin: 0 auto;
   font-family: $font-inter;
+
+}
+
+.loading-wrap {
+  background-color: white;
+  width: clamp(320px, 100%, 1920px);
+  height: 100vh;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: showAndFadeOut 3s ease-out forwards;
+
+  .gif-wrap {
+    width: 220px;
+    height: 246px;
+  }
 }
