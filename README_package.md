@@ -51,3 +51,10 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 npm i sass //讓create-react-app 可以直接引入scss檔案
 
 ```
+
+### 進度 Todo Tree
+｀｀｀
+TODO 待進行
+NEEDCHECK 需確認事項
+FIXME 有問題待修正
+｀｀｀
