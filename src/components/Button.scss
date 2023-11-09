@@ -8,6 +8,8 @@
   gap: var(--spacer-8, 8px);
   border-radius: 500px;
   border: 1px solid var(--default-white, #FFF);
+  line-height: 150%;
+  text-wrap: nowrap;
 
   .icon-wrap {
     width: 32px;

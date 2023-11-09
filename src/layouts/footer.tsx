@@ -12,7 +12,7 @@ export const Footer = () => {
 
   return (
 
-    <footer className='bg-orange' >
+    <footer className='bg-orange ' >
       <div className="left">
         <div className="tag-person-small">
           <div className="number m-r-8">{person_number}</div>
@@ -22,9 +22,6 @@ export const Footer = () => {
           <div className="circle-icon"><img src={icon_fb} alt="icon_fb" className="social-icon" /></div>
           <div className="circle-icon">  <img src={icon_ig} alt="icon_ig" className="social-icon" /></div>
           <div className="circle-icon">  <img src={icon_yt} alt="icon_yt" className="social-icon" /></div>
-
-
-
         </div>
 
         <div className="copyright">© 2023 喵立翰 Miao Li-Han 版權所有</div>

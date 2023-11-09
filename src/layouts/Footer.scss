@@ -3,24 +3,35 @@
 footer {
   display: flex;
   padding: $space-64 14.375%;
-  align-items: flex-start;
   gap: $space-16;
-  align-self: stretch;
+  flex-wrap: wrap;
 
   .left {
+    width: calc((100% - $space-64)/2);
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: $space-16;
-    flex: 1 0 0;
+
+
+    @include ipad-screen {
+      width: 100%;
+    }
   }
 
   .right {
+    width: calc((100% - $space-64)/2);
+
+    @include ipad-screen {
+      width: 100%;
+    }
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: $space-16;
-    flex: 1 0 0;
+
 
     .title {
 
