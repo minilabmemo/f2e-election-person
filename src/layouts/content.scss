@@ -151,9 +151,8 @@
 
   .right {
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
     align-items: center;
-
   }
 
   .left {
@@ -215,11 +214,30 @@ section {
 
 
 .policies {
+  width: 68.75%;
+  margin: auto;
   display: flex;
   gap: $space-64;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: starts;
   align-items: center;
+
+  @include ipad-screen {
+    width: 90.6%;
+    gap: $space-24;
+  }
+
+  .policy {
+    align-self: stretch;
+
+    @include ipad-screen {
+      width: calc(50% - $space-64/2);
+    }
+  }
+
+  .photo {
+    align-self: stretch;
+  }
 
 }
 
