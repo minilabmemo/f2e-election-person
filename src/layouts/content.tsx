@@ -27,7 +27,7 @@ export const Content = () => {
 
       <div className="banner">
         <div className="m-t-96"></div>
-        <h1 className="clip-text matou">台灣的明天 喵先鋪路</h1>
+        <h1 className="clip-text matou title-wrap"> <div>台灣的明天 </div> <div>&nbsp;喵先鋪路</div></h1>
         <div className="wrap ">
           <div className="tag bg-primary m-r-16"> <div className="text">2024 立委參選人</div></div>
           <Person />
