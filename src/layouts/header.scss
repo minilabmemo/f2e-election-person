@@ -5,12 +5,27 @@ header {
   height: 9.9rem;
   font-family: $font-inter;
   background-color: $white;
+  width: 100%;
 }
 
 .head {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 97.5vw;
+  max-width: 1872px;
+  border-radius: $space-16;
+  border: 1px solid $white;
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(12px);
   height: 6.7rem;
+
   display: flex;
+  padding: $space-12 v$space-24;
   justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
 }
 
 .logo-block {
