@@ -21,7 +21,7 @@ const Articles = () => {
             <div className="photo">{item.imageNode}</div>
             <div className="content-group">
               <div className="time">{item.time}</div>
-              <h5 className="m-y-8">{item.title}</h5>
+              <h6 className="m-y-8">{item.title}</h6>
               <div className="content">{item.content}</div>
             </div>
           </div>

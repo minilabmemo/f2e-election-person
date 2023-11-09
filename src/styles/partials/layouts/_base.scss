@@ -11,34 +11,7 @@ body {
   font-size: $base-body-font-size;
   color: $text-primary;
 
-  h1 {
-    @include set-font-size($unit-heading-h1-font-size);
-  }
 
-  h5 {
-    @include set-font-size($unit-heading-h5-font-size);
-  }
-
-  h6 {
-    @include set-font-size($unit-heading-h6-font-size);
-  }
-
-
-  @include phone-screen {
-    h1 {
-      @include set-font-size($unit-heading-h1-font-size-mobile);
-    }
-
-    h5 {
-      @include set-font-size($unit-heading-h5-font-size-mobile);
-    }
-
-    h6 {
-      @include set-font-size($unit-heading-h6-font-size-mobile);
-    }
-
-
-  }
 }
 
 .base {

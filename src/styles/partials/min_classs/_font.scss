@@ -1,0 +1,110 @@
+//RWD follow mockup [desktop->tablet->phone]
+h1.matou {
+  font-family: $font-mantou;
+  line-height: 105%;
+  /* 100.8px */
+  letter-spacing: .2rem;
+  @include set-font-size($unit-heading-h1-font-size-matou);
+
+  @include ipad-screen {
+    @include set-font-size($unit-heading-h1-font-size-matou-mobile);
+  }
+
+}
+
+
+
+h2.matou {
+  font-family: $font-mantou;
+  @include set-font-size($unit-heading-h2-font-size-matou);
+  line-height: normal;
+
+  @include ipad-screen {
+    @include set-font-size($unit-heading-h2-font-size-matou-mobile);
+
+  }
+}
+
+
+h3.matou {
+  font-family: $font-mantou;
+  @include set-font-size($unit-heading-h3-font-size-matou);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @include ipad-screen {
+    @include set-font-size($unit-heading-h3-font-size-matou-mobile);
+    line-height: 105%;
+
+  }
+}
+
+
+h4.matou {
+  font-family: $font-mantou;
+  @include set-font-size($unit-heading-h4-font-size-matou);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0em;
+
+
+  @include ipad-screen {
+    @include set-font-size($unit-heading-h4-font-size-matou-mobile);
+  }
+}
+
+
+
+
+h1 {
+  @include set-font-size($unit-heading-h1-font-size-inter);
+  line-height: 150%;
+  font-weight: 700;
+
+  @include ipad-screen {
+    @include set-font-size($unit-heading-h1-font-size-inter-mobile);
+  }
+}
+
+h3 {
+  @include set-font-size($unit-heading-h3-font-size-inter);
+  line-height: 150%;
+  font-weight: 700;
+
+  @include ipad-screen {
+    @include set-font-size($unit-heading-h3-font-size-inter-mobile);
+  }
+}
+
+
+h4 {
+  @include set-font-size($unit-heading-h4-font-size-inter);
+  font-weight: 700;
+  line-height: 150%;
+
+  @include ipad-screen {
+    @include set-font-size($unit-heading-h4-font-size-inter);
+  }
+}
+
+h5 {
+  @include set-font-size($unit-heading-h5-font-size-inter);
+  font-weight: 700;
+  line-height: 150%;
+
+  @include ipad-screen {
+    @include set-font-size($unit-heading-h5-font-size-inter);
+  }
+}
+
+h6 {
+  @include set-font-size($unit-heading-h6-font-size-inter);
+  font-weight: 700;
+  line-height: 150%;
+
+  @include ipad-screen {
+    @include set-font-size($unit-heading-h6-font-size-inter);
+  }
+}

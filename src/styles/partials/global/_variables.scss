@@ -11,30 +11,38 @@ $font-size-24: 2.4rem;
 $font-size-20: 2rem;
 $font-size-16: 1.6rem;
 
+$unit-heading-h1-font-size-matou: 96;
+$unit-heading-h2-font-size-matou: 64;
+$unit-heading-h3-font-size-matou: 64;
+$unit-heading-h4-font-size-matou: 52;
 
-//依據設計稿定義，實際上沒有全用到對應h1~h5標籤
-$unit-heading-h1-font-size: 40;
-$unit-heading-h2-font-size: 32;
-$unit-heading-h3-font-size: 28;
-$unit-heading-h4-font-size: 24;
-$unit-heading-h5-font-size: 20;
-$unit-heading-h6-font-size: 16;
+$unit-heading-h1-font-size-matou-mobile: 52;
+$unit-heading-h2-font-size-matou-mobile: 52;
+$unit-heading-h3-font-size-matou-mobile: 40;
+$unit-heading-h4-font-size-matou-mobile: 40;
 
-$unit-heading-h1-font-size-mobile: 32;
-$unit-heading-h2-font-size-mobile: 24;
-$unit-heading-h3-font-size-mobile: 24;
-$unit-heading-h4-font-size-mobile: 24;
-$unit-heading-h5-font-size-mobile: 20;
-$unit-heading-h6-font-size-mobile: 16;
+//follow guideline
+$unit-heading-h1-font-size-inter: 40;
+$unit-heading-h2-font-size-inter: 32;
+$unit-heading-h3-font-size-inter: 28;
+$unit-heading-h4-font-size-inter: 24;
+$unit-heading-h5-font-size-inter: 20;
+$unit-heading-h6-font-size-inter: 16;
+
+$unit-heading-h1-font-size-inter-mobile: 28; //ori:32
+$unit-heading-h2-font-size-inter-mobile: 24;
+$unit-heading-h3-font-size-inter-mobile: 24;
+$unit-heading-h4-font-size-inter-mobile: 24;
+$unit-heading-h5-font-size-inter-mobile: 20;
+$unit-heading-h6-font-size-inter-mobile: 16;
 
 $text-font-size-18: 1.8rem;
 $text-small-font-size-14: 1.4rem;
 $text-xl-font-size-64: 6.4rem;
 $text-xxl-font-size-96: 9.6rem;
 
-$mobile-text-font-size: 1.6rem;
-$mobile-text-small-font-size: 1.4rem;
-$mobile-text-xl-font-size: 5.2rem;
+
+$mobile-text-xl-font-size-52: 5.2rem;
 
 
 //spacer
