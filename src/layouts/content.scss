@@ -204,6 +204,7 @@ main {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
     }
 
 
@@ -272,6 +273,8 @@ section {
       width: 100%;
       flex-wrap: wrap;
       height: 8.8rem;
+      flex-direction: column;
+
     }
   }
 

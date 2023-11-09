@@ -69,7 +69,7 @@ export const Content = () => {
         <div className="m-t-medium"></div>
         <div className="policies content-wrap">
           <div className="policy">
-            <div className="group m-x-16 m-b-16">
+            <div className="group ">
               <h4 className="m-0">為毛孩子謀福利！</h4>
               <h4 className="m-0">推動寵物醫療保障方案</h4>
             </div>
@@ -77,14 +77,14 @@ export const Content = () => {
             <div className="photo"> <img src={p1_photo} alt="policy_photo" /></div>
           </div>
           <div className="policy">
-            <div className="group m-x-16 m-b-16">
+            <div className="group ">
               <h4 className="m-0">打造休閒天堂！</h4>
               <h4 className="m-0">  推廣寵物休閒與娛樂場所</h4>
             </div>
             <div className="photo"><img src={p2_photo} alt="policy_photo" /></div>
           </div>
           <div className="policy">
-            <div className="group m-x-16 m-b-16 fixed-h">
+            <div className="group  fixed-h">
               <h4 className="m-0">推廣寵物飼養教育，讓愛更加專業</h4>
 
             </div>
