@@ -58,7 +58,7 @@ h4.matou {
 
 
 
-h1 {
+h1:not(.matou) {
   @include set-font-size($unit-heading-h1-font-size-inter);
   line-height: 150%;
   font-weight: 700;
@@ -68,7 +68,7 @@ h1 {
   }
 }
 
-h3 {
+h3:not(.matou) {
   @include set-font-size($unit-heading-h3-font-size-inter);
   line-height: 150%;
   font-weight: 700;
@@ -79,7 +79,7 @@ h3 {
 }
 
 
-h4 {
+h4:not(.matou) {
   @include set-font-size($unit-heading-h4-font-size-inter);
   font-weight: 700;
   line-height: 150%;
@@ -89,7 +89,7 @@ h4 {
   }
 }
 
-h5 {
+h5:not(.matou) {
   @include set-font-size($unit-heading-h5-font-size-inter);
   font-weight: 700;
   line-height: 150%;
@@ -99,7 +99,7 @@ h5 {
   }
 }
 
-h6 {
+h6:not(.matou) {
   @include set-font-size($unit-heading-h6-font-size-inter);
   font-weight: 700;
   line-height: 150%;

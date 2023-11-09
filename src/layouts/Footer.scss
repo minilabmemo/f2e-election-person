@@ -33,11 +33,11 @@ footer {
     }
 
     .infos {
-      font-size: $space-16;
+      font-size: $font-size-16;
       font-style: normal;
       font-weight: 400;
       line-height: 150%;
-      /* 24px */
+
     }
   }
 }
@@ -88,4 +88,10 @@ footer {
   align-items: center;
   border-radius: 50rem;
   background: $white;
+}
+
+.copyright {
+  font-size: $text-small-font-size-14;
+  line-height: 150%;
+
 }

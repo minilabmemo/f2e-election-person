@@ -28,7 +28,7 @@ export const Content = () => {
       <div className="banner">
         <div className="m-t-96"></div>
         <h1 className="clip-text matou">台灣的明天 喵先鋪路</h1>
-        <div className="subtitle ">
+        <div className="wrap ">
           <div className="tag bg-primary m-r-16"> <div className="text">2024 立委參選人</div></div>
           <Person />
         </div>
@@ -95,13 +95,13 @@ export const Content = () => {
       <section className="bg-white  p-y-104 " id="others">
         <div className="cards text-white ">
           <div className="card bg-orang-dark">
-            <div className="title-group">
+            <div className="wrap">
               <h4 className="matou">小額支持喵喵</h4>
-              <div className="subtitle">您的小筆捐款，是每隻毛孩未來的大大動力！</div>
+              <div className="content">您的小筆捐款，是每隻毛孩未來的大大動力！</div>
 
             </div>
             <div className="more">
-              <div><Button className="bg-white  text-primary ">小額捐款</Button></div>
+              <div><Button className="bg-white text-bold-black  ">小額捐款</Button></div>
               <div className="photo"><img src={donate_photo} alt="donate_photo" /></div>
             </div>
 
@@ -109,11 +109,11 @@ export const Content = () => {
           <div className="card bg-primary">
             <div className="title-group">
               <h4 className="matou">民眾服務信箱</h4>
-              <div className="subtitle">親愛的鄉親，每一位市民的意見都是我們社區前進的原動力</div>
+              <div className="content">親愛的鄉親，每一位市民的意見都是我們社區前進的原動力</div>
 
             </div>
             <div className="more">
-              <div><Button className="bg-white text-primary ">填寫表單</Button></div>
+              <div><Button className="bg-white text-bold-black  ">填寫表單</Button></div>
             </div>
           </div>
         </div>
@@ -121,7 +121,8 @@ export const Content = () => {
 
       <section className="bg-white  p-y-104 " >
 
-        <h2 className="clip-text matou"> 台灣的明天 喵先鋪路</h2>
+        <h2 className="clip-text matou m-b-16"> 台灣的明天 喵先鋪路</h2>
+
         <Person />
       </section>
     </main>
