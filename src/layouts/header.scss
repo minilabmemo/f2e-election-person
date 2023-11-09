@@ -6,6 +6,10 @@ header {
   font-family: $font-inter;
   background-color: $white;
   width: 100%;
+
+  @include phone-screen {
+    height: 5.6rem;
+  }
 }
 
 .head {
@@ -61,6 +65,10 @@ header {
   .social-icon {
     width: 3.2rem;
     height: 3.2rem;
+  }
+
+  @include phone-screen {
+    display: none;
   }
 }
 

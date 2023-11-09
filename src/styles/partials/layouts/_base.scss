@@ -10,13 +10,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: $base-body-font-size;
   color: $text-primary;
-
-
 }
 
 .base {
   background-color: rgb(236, 235, 234);
   margin: auto;
+
+  // overflow: hidden; //FIXME
 }
 
 .container {
@@ -24,6 +24,19 @@ body {
   margin: 0 auto;
   font-family: $font-inter;
 
+}
+
+.content-wrap {
+  width: calc((1320 / 1920) * 100vw);
+
+  @include ipad-screen {
+    width: calc((696 / 768) * 100vw);
+  }
+
+  @include phone-screen {
+    width: calc((343 / 375) * 100vw);
+
+  }
 }
 
 .loading-wrap {

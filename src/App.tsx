@@ -15,6 +15,22 @@ function App() {
       setIsImageLoaded(true);
     };
   }, []);
+  useEffect(() => {
+    if (process.env.REACT_APP_DEBUG_MODE === "true") {
+      checkOverflow();
+    }
+    return () => {
+    };
+  }, []);
+
+  const checkOverflow = () => {
+    document.querySelectorAll('*').forEach((elem) => {
+      const elementWithOffsetWidth = elem as HTMLElement; // Type assertion
+      if (elementWithOffsetWidth.offsetWidth > document.documentElement.offsetWidth) {
+        console.log('Problem child: ', elementWithOffsetWidth);
+      }
+    });
+  };
   return (
     <div className="App">
 

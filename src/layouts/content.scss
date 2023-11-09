@@ -8,18 +8,6 @@ main {
   width: 100%;
 }
 
-.content-wrap {
-  width: 68.75%;
-
-  @include ipad-screen {
-    width: 90.625%;
-  }
-
-  @include phone-screen {
-    width: calc((343 / 375) * 100%);
-
-  }
-}
 
 .clip-text {
   background: $primary-gradient;
@@ -274,6 +262,17 @@ section {
     @include ipad-screen {
       width: calc(50% - $space-64/3);
     }
+
+    @include phone-screen {
+      width: 100%;
+    }
+
+    .group {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      height: 8.8rem;
+    }
   }
 
   .fixed-h {
@@ -289,6 +288,7 @@ section {
 .others {
   display: flex;
   gap: $space-24;
+  flex-wrap: wrap;
 }
 
 .other {
@@ -301,6 +301,10 @@ section {
 
   @include ipad-screen {
     padding: $space-40 $space-24;
+  }
+
+  @include phone-screen {
+    width: 100%;
   }
 
   .wrap {

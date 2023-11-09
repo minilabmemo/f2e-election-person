@@ -9,7 +9,7 @@ const Articles = () => {
         {items.slice(0, 1).map((item, index) => (
           <div className="article" key={index}>
             <div className="photo">{item.imageNode}</div>
-            <div className="time m-t-16">{item.time}</div>
+            <div className="time m-t-small">{item.time}</div>
             <h5 className="m-y-8">{item.title}</h5>
             <div className="content">{item.content}</div>
           </div>

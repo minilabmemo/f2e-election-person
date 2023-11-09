@@ -9,9 +9,14 @@
   padding-bottom: $space-12;
 }
 
-.p-y-104 {
+.section-space {
   padding-top: 10.4rem;
   padding-bottom: 10.4rem;
+
+  @include ipad-screen {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+  }
 }
 
 .p-x-12 {
@@ -46,16 +51,28 @@
 }
 
 
-.m-t-16 {
+.m-t-small {
   margin-top: $space-16;
+
+  @include ipad-screen {
+    margin-top: calc($space-16/3);
+  }
 }
 
-.m-t-64 {
+.m-t-medium {
   margin-top: $space-64;
+
+  @include ipad-screen {
+    margin-top: calc($space-64/3);
+  }
 }
 
-.m-t-96 {
+.m-t-large {
   margin-top: $space-96;
+
+  @include ipad-screen {
+    margin-top: calc($space-96/3);
+  }
 }
 
 .m-r-8 {

@@ -26,7 +26,7 @@ export const Content = () => {
     <main>
 
       <div className="banner">
-        <div className="m-t-96"></div>
+        <div className="m-t-large"></div>
         <h1 className="clip-text matou title-wrap"> <div>台灣的明天 </div> <div>&nbsp;喵先鋪路</div></h1>
         <div className="wrap ">
           <div className="tag bg-primary m-r-16"> <div className="text">2024 立委參選人</div></div>
@@ -38,7 +38,7 @@ export const Content = () => {
         <h3 className="marquee-text matou">為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望</h3>
       </div>
 
-      <section className="bg-orange p-y-104" id="idea">
+      <section className="bg-orange section-space" id="idea">
         <div className="idea-wrap content-wrap">
           <div className="left">
             <div className="title-group">
@@ -55,21 +55,21 @@ export const Content = () => {
         </div>
       </section>
 
-      <section className="bg-white  p-y-104 " id="events">
+      <section className="bg-white  section-space " id="events">
         <h6 className="tag-small p-x-12 p-y-8">LATEST EVENTS</h6>
         <h2 className="clip-text matou"> 最新活動</h2>
-        <div className="m-t-64"></div>
+        <div className="m-t-medium"></div>
         <Articles />
       </section>
 
-      <section className="bg-white  p-y-104 " id="policy">
+      <section className="bg-white  section-space " id="policy">
 
         <h6 className="tag-small p-x-12 p-y-8"> POLICY ISSUES</h6>
         <h2 className="clip-text matou"> 政策議題</h2>
-        <div className="m-t-64"></div>
+        <div className="m-t-medium"></div>
         <div className="policies content-wrap">
           <div className="policy">
-            <div className="m-x-16 m-b-16">
+            <div className="group m-x-16 m-b-16">
               <h4 className="m-0">為毛孩子謀福利！</h4>
               <h4 className="m-0">推動寵物醫療保障方案</h4>
             </div>
@@ -77,14 +77,14 @@ export const Content = () => {
             <div className="photo"> <img src={p1_photo} alt="policy_photo" /></div>
           </div>
           <div className="policy">
-            <div className="m-x-16 m-b-16">
+            <div className="group m-x-16 m-b-16">
               <h4 className="m-0">打造休閒天堂！</h4>
               <h4 className="m-0">  推廣寵物休閒與娛樂場所</h4>
             </div>
             <div className="photo"><img src={p2_photo} alt="policy_photo" /></div>
           </div>
           <div className="policy">
-            <div className="m-x-16 m-b-16 fixed-h">
+            <div className="group m-x-16 m-b-16 fixed-h">
               <h4 className="m-0">推廣寵物飼養教育，讓愛更加專業</h4>
 
             </div>
@@ -93,7 +93,7 @@ export const Content = () => {
         </div>
       </section>
 
-      <section className="bg-white  p-y-104 " id="others">
+      <section className="bg-white  section-space " id="others">
         <div className="others text-white  content-wrap">
           <div className="other bg-orang-dark">
             <div className="wrap">
@@ -120,7 +120,7 @@ export const Content = () => {
         </div>
       </section>
 
-      <section className="bg-white  p-y-104 " >
+      <section className="bg-white  section-space " >
         <h2 className="clip-text matou m-b-16"> 台灣的明天 喵先鋪路</h2>
         <Person />
       </section>
