@@ -19,7 +19,7 @@ export const Header = () => {
         <div className="logo-block"><img src={brand} alt="brand" /></div>
         <nav className="menu">
           <ul className='link-list'>
-            <li className="link m-x-8 p-8"><a href="#idea"> 候選人主張</a></li>
+            <li className="link m-x-8 p-8"><a href="#idea">候選人主張</a></li>
             <li className="link m-x-8 p-8"><a href="#events">最新活動</a></li>
             <li className="link m-x-8 p-8"><a href="#policy">政策議題</a></li>
             <li className="link m-x-8 p-8"><a href="#others">小額捐款</a></li>
