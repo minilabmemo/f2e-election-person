@@ -2,37 +2,28 @@
 import "./Content.scss";
 import banner_photo from "../assets/images/banner.png"
 import idea from "../assets/images/idea.png" //TODO
-
 import Articles from "../components/Articles";
 import p1_photo from "../assets/images/p1_photo.png"
 import p2_photo from "../assets/images/p2_photo.png"
 import p3_photo from "../assets/images/p3_photo.png"
 import donate_photo from "../assets/images/donate_photo.png"
 import Button from "../components/Button";
-import { person_name, person_number } from "../utils/const_config";
+import { PersonBadge } from "../components/PersonBadge";
 export const Content = () => {
 
 
-  const Person = () => {
-    return (
-      <div className="tag-person shadow">
-        <div className="number m-r-16">{person_number}</div>
-        <h1 className="name">{person_name}</h1>
-      </div>
-    )
-  }
 
   return (
     <main>
 
       <div className="banner">
         <div className="m-t-large"></div>
-        <h1 className="clip-text matou title-wrap fadeIn-text-1 "> <div>台灣的明天 </div> <div>&nbsp;喵先鋪路</div></h1>
-        <div className="group fadeIn-text-2 ">
+        <h1 className="clip-text matou title-wrap fadeIn-1 "> <div>台灣的明天 </div> <div>&nbsp;喵先鋪路</div></h1>
+        <div className="group fadeIn-2 ">
           <div className="tag bg-primary m-r-16"> <div className="text">2024 立委參選人</div></div>
-          <Person />
+          <PersonBadge />
         </div>
-        <div className="photo fadeIn-text-3 "><img src={banner_photo} alt="banner_photo" /></div>
+        <div className="photo fadeIn-3 "><img src={banner_photo} alt="banner_photo" /></div>
       </div>
       <div className="news-ticker">
         <h3 className="marquee-text matou">為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望</h3>
@@ -126,7 +117,7 @@ export const Content = () => {
           <div> 喵先鋪路</div>
         </h2>
         <div className="space-title"></div>
-        <Person />
+        <PersonBadge />
       </section>
 
     </main>
