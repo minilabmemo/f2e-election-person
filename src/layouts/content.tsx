@@ -27,12 +27,12 @@ export const Content = () => {
 
       <div className="banner">
         <div className="m-t-large"></div>
-        <h1 className="clip-text matou title-wrap"> <div>台灣的明天 </div> <div>&nbsp;喵先鋪路</div></h1>
-        <div className="group ">
+        <h1 className="clip-text matou title-wrap fadeIn-text-1 "> <div>台灣的明天 </div> <div>&nbsp;喵先鋪路</div></h1>
+        <div className="group fadeIn-text-2 ">
           <div className="tag bg-primary m-r-16"> <div className="text">2024 立委參選人</div></div>
           <Person />
         </div>
-        <div className="photo"><img src={banner_photo} alt="banner_photo" /></div>
+        <div className="photo fadeIn-text-3 "><img src={banner_photo} alt="banner_photo" /></div>
       </div>
       <div className="news-ticker">
         <h3 className="marquee-text matou">為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望</h3>

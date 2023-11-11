@@ -30,6 +30,7 @@ header {
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+  z-index: 2;
 
   @include ipad-screen {
     padding: $space-12 $space-16;

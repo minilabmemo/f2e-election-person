@@ -28,6 +28,7 @@ main {
 
   .photo {
     height: 53.8rem;
+    vertical-align: bottom;
 
     @include ipad-screen {
       width: 343px;
@@ -161,6 +162,9 @@ main {
     animation: marquee 10s linear infinite;
   }
 }
+
+
+
 
 .idea-wrap {
 

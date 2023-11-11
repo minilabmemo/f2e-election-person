@@ -27,11 +27,13 @@ function App() {
             <p >Loading...</p>
           )}</div>
         </div>
-        <div className="container">
-          <Header></Header>
-          <Content></Content>
-          <Footer></Footer>
-        </div>
+        {isImageLoaded && (
+          <div className="container">
+            <Header></Header>
+            <Content></Content>
+            <Footer></Footer>
+          </div>
+        )}
       </div>
 
     </div>
