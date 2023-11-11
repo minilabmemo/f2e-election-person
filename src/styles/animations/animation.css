@@ -47,3 +47,16 @@
     /*最後一刻淡化且要整個消失才不會蓋到首頁功能*/
   }
 }
+
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

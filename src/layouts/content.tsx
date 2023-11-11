@@ -9,6 +9,45 @@ import p3_photo from "../assets/images/p3_photo.png"
 import donate_photo from "../assets/images/donate_photo.png"
 import Button from "../components/Button";
 import { PersonBadge } from "../components/PersonBadge";
+import React, { useEffect, useRef, useState } from 'react';
+
+interface AnimatedBlockProps {
+  children: React.ReactNode;
+}
+
+const AnimatedBlock: React.FC<AnimatedBlockProps> = ({ children }) => {
+  const blockRef = useRef<HTMLDivElement>(null);
+  const [isAnimated, setIsAnimated] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (blockRef.current) {
+        const blockTop = blockRef.current.offsetTop;
+        const blockHeight = blockRef.current.offsetHeight;
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        if (scrollPosition > blockTop - windowHeight + blockHeight / 2) {
+          setIsAnimated(true);
+        }
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <div
+      ref={blockRef}
+      className={`animated-block ${isAnimated ? 'animate' : ''}`}
+    >
+      {children}
+    </div>
+  );
+};
+
+
 export const Content = () => {
 
 
@@ -30,20 +69,22 @@ export const Content = () => {
       </div>
 
       <section className="bg-orange section-space" id="idea">
-        <div className="idea-wrap content-wrap">
-          <div className="left">
-            <div className="title-group">
-              <h6 className="tag-small p-x-12 p-y-8">ADVOCATE</h6>
-              <h2 className="clip-text matou"> 候選人主張</h2>
+        <AnimatedBlock>
+          <div className="idea-wrap content-wrap">
+            <div className="left">
+              <div className="title-group">
+                <h6 className="tag-small p-x-12 p-y-8">ADVOCATE</h6>
+                <h2 className="clip-text matou"> 候選人主張</h2>
+              </div>
+
+              <h3 className="">我堅信 ! 藉由推動更完善的<span className="text-orang-dark">貓咪福利</span>和相關政策，更是間接地投資於<span className="text-orang-dark">台灣的未來</span>。</h3>
+              <div className="content">畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的 GDP 經濟帶來巨大效益。
+                因此，我期望能在立法院內推進這些政策，確保每一隻貓咪都能得到他們應有的照顧，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。</div>
             </div>
+            <div className="right"> <img src={idea} alt="idea_photo" /></div>
 
-            <h3 className="">我堅信 ! 藉由推動更完善的<span className="text-orang-dark">貓咪福利</span>和相關政策，更是間接地投資於<span className="text-orang-dark">台灣的未來</span>。</h3>
-            <div className="content">畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的 GDP 經濟帶來巨大效益。
-              因此，我期望能在立法院內推進這些政策，確保每一隻貓咪都能得到他們應有的照顧，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。</div>
           </div>
-          <div className="right"> <img src={idea} alt="idea_photo" /></div>
-
-        </div>
+        </AnimatedBlock>
       </section>
 
       <section className="bg-white  section-space " id="events">
