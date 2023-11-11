@@ -35,6 +35,20 @@
   animation: 1s fadeIn 5s linear forwards;
 }
 
-.animated-block.animate {
+.animated-block {
+  opacity: 0;
+}
+
+.animated-block.animate-b-in {
   animation: slideInFromBottom 1s linear forwards;
+}
+
+
+.animated-block.animate-title-in {
+  animation: fadeIn 1s linear forwards;
+}
+
+.animated-block.animate-content-in {
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 1s;
 }

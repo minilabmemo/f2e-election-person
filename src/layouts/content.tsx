@@ -9,48 +9,11 @@ import p3_photo from "../assets/images/p3_photo.png"
 import donate_photo from "../assets/images/donate_photo.png"
 import Button from "../components/Button";
 import { PersonBadge } from "../components/PersonBadge";
-import React, { useEffect, useRef, useState } from 'react';
+import { AnimatedBlock } from "../components/AnimatedBlock";
 
-interface AnimatedBlockProps {
-  children: React.ReactNode;
-}
-
-const AnimatedBlock: React.FC<AnimatedBlockProps> = ({ children }) => {
-  const blockRef = useRef<HTMLDivElement>(null);
-  const [isAnimated, setIsAnimated] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (blockRef.current) {
-        const blockTop = blockRef.current.offsetTop;
-        const blockHeight = blockRef.current.offsetHeight;
-        const scrollPosition = window.scrollY;
-        const windowHeight = window.innerHeight;
-        if (scrollPosition > blockTop - windowHeight + blockHeight / 2) {
-          setIsAnimated(true);
-        }
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  return (
-    <div
-      ref={blockRef}
-      className={`animated-block ${isAnimated ? 'animate' : ''}`}
-    >
-      {children}
-    </div>
-  );
-};
 
 
 export const Content = () => {
-
-
 
   return (
     <main>
@@ -69,7 +32,7 @@ export const Content = () => {
       </div>
 
       <section className="bg-orange section-space" id="idea">
-        <AnimatedBlock>
+        <AnimatedBlock addAnimeName="animate-b-in">
           <div className="idea-wrap content-wrap">
             <div className="left">
               <div className="title-group">
@@ -86,81 +49,82 @@ export const Content = () => {
           </div>
         </AnimatedBlock>
       </section>
-
-      <section className="bg-white  section-space " id="events">
-        <h6 className="tag-small p-x-12 p-y-8">LATEST EVENTS</h6>
-        <h2 className="clip-text matou"> 最新活動</h2>
-        <div className="m-t-medium"></div>
-        <Articles />
-      </section>
-
-      <section className="bg-white  section-space " id="policy">
-
-        <h6 className="tag-small p-x-12 p-y-8"> POLICY ISSUES</h6>
-        <h2 className="clip-text matou"> 政策議題</h2>
-        <div className="m-t-medium"></div>
-        <div className="policies content-wrap">
-          <div className="policy">
-            <div className="group ">
-              <h4>為毛孩子謀福利！</h4>
-              <h4>推動寵物醫療保障方案</h4>
+      <AnimatedBlock addAnimeName="animate-title-in">
+        <section className="bg-white  section-space " id="events">
+          <h6 className="tag-small p-x-12 p-y-8">  LATEST EVENTS </h6>
+          <h2 className="clip-text matou"> 最新活動</h2>
+          <div className="m-t-medium"></div>
+          <Articles />
+        </section>
+      </AnimatedBlock>
+      <AnimatedBlock addAnimeName="animate-title-in">
+        <section className="bg-white  section-space " id="policy">
+          <h6 className="tag-small p-x-12 p-y-8"> POLICY ISSUES</h6>
+          <h2 className="clip-text matou"> 政策議題</h2>
+          <div className="m-t-medium"></div>
+          <div className="policies content-wrap">
+            <div className="policy">
+              <div className="group ">
+                <h4>為毛孩子謀福利！</h4>
+                <h4>推動寵物醫療保障方案</h4>
+              </div>
+              <div className="photo"> <img src={p1_photo} alt="policy_photo" /></div>
             </div>
-
-            <div className="photo"> <img src={p1_photo} alt="policy_photo" /></div>
-          </div>
-          <div className="policy">
-            <div className="group ">
-              <h4>打造休閒天堂！</h4>
-              <h4>  推廣寵物休閒與娛樂場所</h4>
+            <div className="policy">
+              <div className="group ">
+                <h4>打造休閒天堂！</h4>
+                <h4>  推廣寵物休閒與娛樂場所</h4>
+              </div>
+              <div className="photo"><img src={p2_photo} alt="policy_photo" /></div>
             </div>
-            <div className="photo"><img src={p2_photo} alt="policy_photo" /></div>
-          </div>
-          <div className="policy">
-            <div className="group  fixed-h">
-              <h4>推廣寵物飼養教育，讓愛更加專業</h4>
+            <div className="policy">
+              <div className="group  fixed-h">
+                <h4>推廣寵物飼養教育，讓愛更加專業</h4>
 
-            </div>
-            <div className="photo"><img src={p3_photo} alt="policy_photo" /></div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white  section-space " id="others">
-        <div className="others text-white  content-wrap">
-          <div className="other bg-orang-dark">
-            <div className="wrap">
-              <h4 className="matou">小額支持喵喵</h4>
-              <div className="content">您的小筆捐款，是每隻毛孩未來的大大動力！</div>
-
-            </div>
-            <div className="more">
-              <div className="btn-wrap"><Button className="bg-white text-bold-black  ">小額捐款</Button></div>
-              <div className="photo"><img src={donate_photo} alt="donate_photo" /></div>
-            </div>
-
-          </div>
-          <div className="other bg-primary">
-            <div className="title-group">
-              <h4 className="matou">民眾服務信箱</h4>
-              <div className="content">親愛的鄉親，每一位市民的意見都是我們社區前進的原動力</div>
-
-            </div>
-            <div className="more">
-              <div><Button className="bg-white text-bold-black  ">填寫表單</Button></div>
+              </div>
+              <div className="photo"><img src={p3_photo} alt="policy_photo" /></div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </AnimatedBlock>
+      <AnimatedBlock addAnimeName="animate-title-in">
+        <section className="bg-white  section-space " id="others">
+          <div className="others text-white  content-wrap">
+            <div className="other bg-orang-dark">
+              <div className="wrap">
+                <h4 className="matou">小額支持喵喵</h4>
+                <div className="content">您的小筆捐款，是每隻毛孩未來的大大動力！</div>
 
-      <section className="bg-white  section-space " >
-        <h2 className="clip-text matou slogan-wrap">
-          <div>台灣的明天&nbsp;</div>
-          <div> 喵先鋪路</div>
-        </h2>
-        <div className="space-title"></div>
-        <PersonBadge />
-      </section>
+              </div>
+              <div className="more">
+                <div className="btn-wrap"><Button className="bg-white text-bold-black  ">小額捐款</Button></div>
+                <div className="photo"><img src={donate_photo} alt="donate_photo" /></div>
+              </div>
 
+            </div>
+            <div className="other bg-primary">
+              <div className="title-group">
+                <h4 className="matou">民眾服務信箱</h4>
+                <div className="content">親愛的鄉親，每一位市民的意見都是我們社區前進的原動力</div>
+
+              </div>
+              <div className="more">
+                <div><Button className="bg-white text-bold-black  ">填寫表單</Button></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </AnimatedBlock>
+      <AnimatedBlock addAnimeName="animate-title-in">
+        <section className="bg-white  section-space " >
+          <h2 className="clip-text matou slogan-wrap">
+            <div>台灣的明天&nbsp;</div>
+            <div> 喵先鋪路</div>
+          </h2>
+          <div className="space-title"></div>
+          <PersonBadge />
+        </section>
+      </AnimatedBlock>
     </main>
   );
 };
