@@ -89,3 +89,11 @@
 .m-r-16 {
   margin-right: $space-16;
 }
+
+.m-b-64 {
+  margin-bottom: $space-64;
+
+  @include ipad-screen {
+    margin-bottom: $space-16;
+  }
+}

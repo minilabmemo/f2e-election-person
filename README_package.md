@@ -49,6 +49,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## install
 ```
 npm i sass //讓create-react-app 可以直接引入scss檔案
+npm install react-intersection-observer 動畫觀察庫
 
 ```
 

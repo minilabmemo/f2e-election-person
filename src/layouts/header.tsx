@@ -15,7 +15,7 @@ export const Header = () => {
 
   return (
     <header className='header  '>
-      <div className='head '>
+      <div className='head fadeIn-delay-2'>
         <div className="logo-block"><img src={brand} alt="brand" /></div>
         <nav className="menu">
           <ul className='link-list'>
