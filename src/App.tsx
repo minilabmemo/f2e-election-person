@@ -4,6 +4,7 @@ import { Footer } from './layouts/Footer';
 import { Header } from './layouts/Header';
 import gif from "./assets/gif/loading.gif"
 import { useEffect, useState } from 'react';
+import { NavBarMobile } from './layouts/NavBarMobile';
 
 function App() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -32,6 +33,7 @@ function App() {
             <Header></Header>
             <Content></Content>
             <Footer></Footer>
+            <NavBarMobile></NavBarMobile>
           </div>
         )}
       </div>
