@@ -22,7 +22,14 @@ export const policyItems: PolicyItem[] = [
     time: '2023/12/26',
     title: '為毛孩子謀福利！',
     sub_title: '推動寵物醫療保障方案',
-    content: <><div>test <h2>h2</h2></div></>,
+    content: <><div>
+      <h5 className="m-y-8">設立寵物醫療基金</h5>
+      <div className="m-b-16">每年撥款新台幣 10 億元，專款專用於支援家庭寵物的醫療費用</div>
+      <h5 className="m-y-8">提供醫療補助</h5>
+      <div className="m-b-16">每隻寵物每年可獲得高達新台幣 20,000 元的醫療補助，減輕飼主的經濟壓力</div>
+      <h5 className="m-y-8">合作動物醫院</h5>
+      <div className="m-b-16">目前已有和超過 200 家動物醫院進行初步的合作討論</div>
+    </div></>,
     imageNode: <img src={p1_photo} alt="policy_photo" />
   },
   {
@@ -30,7 +37,14 @@ export const policyItems: PolicyItem[] = [
     time: '2023/12/24',
     title: '打造休閒天堂！',
     sub_title: '推廣寵物休閒與娛樂場所',
-    content: '街上氣氛真的很棒，從小孩到大人，甚至有些狗狗朋友都帶著貓耳來找我握手，真的太可愛了！',
+    content: <><div>
+      <h5 className="m-y-8">設立寵物醫療基金</h5>
+      <div className="m-b-16">每年撥款新台幣 10 億元，專款專用於支援家庭寵物的醫療費用</div>
+      <h5 className="m-y-8">提供醫療補助</h5>
+      <div className="m-b-16">每隻寵物每年可獲得高達新台幣 20,000 元的醫療補助，減輕飼主的經濟壓力</div>
+      <h5 className="m-y-8">合作動物醫院</h5>
+      <div className="m-b-16">目前已有和超過 200 家動物醫院進行初步的合作討論</div>
+    </div></>,
     imageNode: <img src={p2_photo} alt="policy_photo" />
   },
   {
@@ -38,7 +52,14 @@ export const policyItems: PolicyItem[] = [
     time: '2023/12/20',
     title: '推廣寵物飼養教育，讓愛更加專頁',
     sub_title: '',
-    content: '今天的收容所不再是一片寂靜。為了讓更多人認識到這裡的毛孩子，我們舉辦了一場前所未有的「模特兒走秀」！',
+    content: <><div>
+      <h5 className="m-y-8">設立寵物醫療基金</h5>
+      <div className="m-b-16">每年撥款新台幣 10 億元，專款專用於支援家庭寵物的醫療費用</div>
+      <h5 className="m-y-8">提供醫療補助</h5>
+      <div className="m-b-16">每隻寵物每年可獲得高達新台幣 20,000 元的醫療補助，減輕飼主的經濟壓力</div>
+      <h5 className="m-y-8">合作動物醫院</h5>
+      <div className="m-b-16">目前已有和超過 200 家動物醫院進行初步的合作討論</div>
+    </div></>,
     imageNode: <img alt="policy_photo" src={p3_photo} />
   },
   {
@@ -46,7 +67,14 @@ export const policyItems: PolicyItem[] = [
     time: '2023/12/27',
     title: '參與台北寵物論壇，爭取貓咪友善環境',
     sub_title: '',
-    content: '炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！',
+    content: <><div>
+      <h5 className="m-y-8">設立寵物醫療基金</h5>
+      <div className="m-b-16">每年撥款新台幣 10 億元，專款專用於支援家庭寵物的醫療費用</div>
+      <h5 className="m-y-8">提供醫療補助</h5>
+      <div className="m-b-16">每隻寵物每年可獲得高達新台幣 20,000 元的醫療補助，減輕飼主的經濟壓力</div>
+      <h5 className="m-y-8">合作動物醫院</h5>
+      <div className="m-b-16">目前已有和超過 200 家動物醫院進行初步的合作討論</div>
+    </div></>,
     imageNode: <img alt="article_photo" src={a4_photo} />
   },
 

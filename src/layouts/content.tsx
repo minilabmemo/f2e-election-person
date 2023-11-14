@@ -2,7 +2,7 @@
 import "./Content.scss";
 import banner_photo from "../assets/images/banner.png"
 import idea from "../assets/images/idea.png" //TODO
-import { Articles, ItemsModal } from "../components/Articles";
+import { Articles } from "../components/Articles";
 import donate_photo from "../assets/images/donate_photo.png"
 import Button from "../components/btns/Button";
 import { PersonBadge } from "../components/PersonBadge";
@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { ArticleItem } from "../utils/articles_config";
 import { PolicyItem } from "../utils/polices_config";
 import { Polices } from "../components/Polices";
+import { ItemsModal } from "../components/modals/ItemsModal";
 
 
 

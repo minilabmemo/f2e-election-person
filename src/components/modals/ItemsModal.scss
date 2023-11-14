@@ -1,0 +1,91 @@
+@import '../../styles/global_all.scss';
+
+
+
+.modal_box {
+  width: calc((1400/1920) *100vw);
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.modal_title {
+  height: 9.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.modal_content {
+  display: flex;
+  height: 80%;
+  gap: 3.2rem;
+
+
+
+  @include ipad-screen {
+    flex-direction: column;
+  }
+}
+
+.modal_main_photo {
+  width: 100%;
+  max-width: 507px;
+  max-height: 308px;
+  border-radius: $space-24;
+  overflow: hidden;
+}
+
+.modal_main {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  justify-content: start;
+  width: calc(507/1400 * 100vw);
+  max-width: 507px;
+
+  @include ipad-screen {
+    width: 100%;
+  }
+
+  ;
+}
+
+.modal_aside {
+  width: calc(765/1400 * 100vw);
+  max-width: 765px;
+
+  @include ipad-screen {
+    width: 100%;
+  }
+}
+
+.modal_item_content {
+  min-height: 30%;
+}
+
+
+.modal_more {
+  background: #F8FAFC;
+}
+
+.modal_more_contents {
+  display: flex;
+  width: 100%;
+  gap: 1.6rem;
+
+
+}
+
+.modal_more_content {
+  width: 30%;
+}
+
+.modal_more_photo {
+
+  border-radius: $space-24;
+  overflow: hidden;
+
+}

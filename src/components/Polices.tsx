@@ -1,6 +1,6 @@
 import "./Articles.scss";
 import { PolicyItem, policyItems } from "../utils/polices_config";
-import { Modal } from "./Modal";
+import { Modal } from "./modals/Modal";
 import { ArticleItem } from "../utils/articles_config";
 
 
@@ -25,7 +25,8 @@ export const Polices: React.FC<ArticlesProps> = ({ openModal }) => {
           <div className="policy" onClick={() => handleClick(item, index)}>
             <div className="group ">
               <h4>{item.title}</h4>
-              <h4>{item.sub_title}</h4>
+              {item.sub_title && <h4>{item.sub_title}</h4>}
+
             </div>
             <div className="photo"> {item.imageNode}</div>
           </div>

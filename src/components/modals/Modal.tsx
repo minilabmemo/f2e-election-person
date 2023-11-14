@@ -1,5 +1,5 @@
 import "./Modal.scss";
-import cancel from "../assets/images/cancel.svg";
+import cancel from "../../assets/images/cancel.svg";
 
 interface ModalProps {
   isOpen: boolean;
