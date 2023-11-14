@@ -4,6 +4,7 @@ import { PolicyItem, policyItems } from "../utils/polices_config";
 import { ArticleItem } from "../utils/articles_config";
 import { useEffect, useRef, useState } from "react";
 import control from "../assets/images/control.svg"
+import Button from "./btns/Button";
 
 
 interface ItemsProps {
@@ -48,6 +49,13 @@ export const Polices: React.FC<ItemsProps> = ({ openModal }) => {
       setFocusIndex((prev) => prev + 1);
     }
   };
+
+  const handleResetFocus = (index: number) => {
+    setFocusIndex(index);
+
+  };
+
+
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
@@ -72,6 +80,7 @@ export const Polices: React.FC<ItemsProps> = ({ openModal }) => {
     const x = e.pageX - viewportRef.current.offsetLeft;
     const walk = x - startX;
     viewportRef.current.scrollLeft = scrollLeft - walk;
+
   };
 
   return (
@@ -90,11 +99,12 @@ export const Polices: React.FC<ItemsProps> = ({ openModal }) => {
           .map((item, index) => (
             <div className={`policy ${focusIndex === index ? "active" : ""}`}
               ref={focusIndex === index ? objectRef : null}
-              key={index} onClick={() => handleClick(item, index)}>
+              key={index} >
               <div className="policy_photo"> {item.imageNode}</div>
               <div className="group ">
                 <h4>{item.title}</h4>
                 {item.sub_title && <h4>{item.sub_title}</h4>}
+                <div onClick={() => handleClick(item, index)}> <Button className="text-white  bg-orang-dark">查看</Button></div>
 
               </div>
 
@@ -109,7 +119,7 @@ export const Polices: React.FC<ItemsProps> = ({ openModal }) => {
         </button>
         {policyItems
           .map((item, index) => (
-            <div className={`control_circle ${focusIndex === index ? "active" : ""}`}>
+            <div className={`control_circle ${focusIndex === index ? "active" : ""}`} onClick={() => handleResetFocus(index)}>
 
             </div>
           ))
