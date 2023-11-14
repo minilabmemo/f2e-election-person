@@ -48,9 +48,41 @@ export const Polices: React.FC<ItemsProps> = ({ openModal }) => {
       setFocusIndex((prev) => prev + 1);
     }
   };
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (viewportRef.current) {
+      setIsDragging(true);
+      setStartX(e.pageX - viewportRef.current.offsetLeft);
+      setScrollLeft(viewportRef.current.scrollLeft);
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!isDragging || !viewportRef.current) return;
+    const x = e.pageX - viewportRef.current.offsetLeft;
+    const walk = x - startX;
+    viewportRef.current.scrollLeft = scrollLeft - walk;
+  };
+
   return (
     <div className="policies_wrap">
-      <div className="policies" ref={viewportRef}>
+      <div className="policies"
+        ref={viewportRef}
+        onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseLeave}
+        onMouseMove={handleMouseMove}
+      >
 
         <div className="policy_invisible" ></div>
         {policyItems
