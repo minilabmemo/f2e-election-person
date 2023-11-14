@@ -1,0 +1,70 @@
+@import '../styles/global_all.scss';
+
+
+.policies {
+  margin: auto;
+  display: flex;
+  gap: $space-24;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+
+  overflow: hidden;
+  flex-shrink: 0;
+
+
+
+  .fixed-h {
+    height: 7.2rem;
+  }
+
+
+
+}
+
+
+.policy {
+  background-color: $white;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 32px;
+  gap: 32px;
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    ;
+
+  }
+}
+
+.policy_invisible {
+  // visibility: hidden;
+  flex-shrink: 0;
+  width: 792px;
+  height: 403px;
+}
+
+.policy_photo {
+  width: calc(355/656 * 100%)
+}
+
+.policy.active {
+  width: calc(((792)/1920 * 100vw));
+  height: 403px;
+
+  .policy_photo {
+    width: calc(((428)/792 * 100%))
+  }
+}
+
+.policy:not(.active) {
+  // width: 656.73px;
+  width: calc(((656.73)/1920 * 100vw));
+  height: 334.17px;
+}

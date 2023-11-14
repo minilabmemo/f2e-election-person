@@ -45,3 +45,27 @@ body {
     width: calc((310 / 320) * 100vw);
   }
 }
+
+
+.full-wrap {
+  width: 100vw;
+  max-width: 1920px;
+
+  @include ipad-screen {
+    width: calc((696 / 768) * 100vw);
+  }
+
+  @include phone-screen-576 {
+    width: calc((540 / 576) * 100vw);
+
+  }
+
+  @include phone-screen {
+    width: calc((343 / 375) * 100vw);
+
+  }
+
+  @include phone-x-small-screen {
+    width: calc((310 / 320) * 100vw);
+  }
+}

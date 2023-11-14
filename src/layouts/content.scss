@@ -210,50 +210,6 @@ section {
 }
 
 
-.policies {
-
-  margin: auto;
-  display: flex;
-  gap: $space-64;
-  flex-wrap: wrap;
-  justify-content: starts;
-  align-items: center;
-
-  @include ipad-screen {
-    gap: $space-24;
-  }
-
-  .policy {
-    align-self: stretch;
-    width: calc((100% - $space-64*2)/3);
-
-    @include ipad-screen {
-      width: calc(50% - $space-64/3);
-    }
-
-    @include phone-screen {
-      width: 100%;
-    }
-
-    .group {
-      display: flex;
-      width: 100%;
-      flex-wrap: wrap;
-
-      flex-direction: column;
-
-    }
-  }
-
-  .fixed-h {
-    height: 7.2rem;
-  }
-
-  .photo {
-    align-self: stretch;
-  }
-
-}
 
 .others {
   display: flex;

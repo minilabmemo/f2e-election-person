@@ -113,11 +113,11 @@ export const Content = () => {
       </section>
 
 
-      <section className={`bg-white  section-space`} id="policy">
+      <section className={`bg-orange  section-space`} id="policy">
         <h6 ref={ref3} className={`tag-small p-x-12 p-y-8 animated-block ${isAnimated3 ? 'fadeIn-no-delay' : ''}`}> POLICY ISSUES</h6>
         <h2 className={`clip-text matou animated-block ${isAnimated3 ? 'fadeIn-no-delay' : ''}`}> 政策議題</h2>
         <div className="m-t-medium"></div>
-        <div className={`policies content-wrap animated-block ${isAnimated3 ? 'fadeIn-delay-1' : ''}`}>
+        <div className={` full-wrap animated-block ${isAnimated3 ? 'fadeIn-delay-1' : ''}`}>
           <Polices openModal={openModal} />
         </div>
       </section>
