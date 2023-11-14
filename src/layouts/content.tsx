@@ -2,18 +2,17 @@
 import "./Content.scss";
 import banner_photo from "../assets/images/banner.png"
 import idea from "../assets/images/idea.png" //TODO
-import { Articles, ArticlesModal } from "../components/Articles";
-import p1_photo from "../assets/images/p1_photo.png"
-import p2_photo from "../assets/images/p2_photo.png"
-import p3_photo from "../assets/images/p3_photo.png"
+import { Articles, ItemsModal } from "../components/Articles";
 import donate_photo from "../assets/images/donate_photo.png"
-import Button from "../components/Button";
+import Button from "../components/btns/Button";
 import { PersonBadge } from "../components/PersonBadge";
 
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from "react";
-import { Modal } from "../components/Modal";
+
 import { ArticleItem } from "../utils/articles_config";
+import { PolicyItem } from "../utils/polices_config";
+import { Polices } from "../components/Polices";
 
 
 
@@ -56,11 +55,11 @@ export const Content = () => {
     }
   }, [inView5]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState<ArticleItem | null>(null);
+  const [selectedItem, setSelectedItem] = useState<ArticleItem | PolicyItem | null>(null);
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
 
-  const openModal = (item: ArticleItem, index: number) => {
+  const openModal = (item: ArticleItem | PolicyItem, index: number) => {
     setSelectedItem(item);
     setSelectedIndex(index);
     setIsModalOpen(true);
@@ -118,27 +117,7 @@ export const Content = () => {
         <h2 className={`clip-text matou animated-block ${isAnimated3 ? 'fadeIn-no-delay' : ''}`}> 政策議題</h2>
         <div className="m-t-medium"></div>
         <div className={`policies content-wrap animated-block ${isAnimated3 ? 'fadeIn-delay-1' : ''}`}>
-          <div className="policy">
-            <div className="group ">
-              <h4>為毛孩子謀福利！</h4>
-              <h4>推動寵物醫療保障方案</h4>
-            </div>
-            <div className="photo"> <img src={p1_photo} alt="policy_photo" /></div>
-          </div>
-          <div className="policy">
-            <div className="group ">
-              <h4>打造休閒天堂！</h4>
-              <h4>  推廣寵物休閒與娛樂場所</h4>
-            </div>
-            <div className="photo"><img src={p2_photo} alt="policy_photo" /></div>
-          </div>
-          <div className="policy">
-            <div className="group  fixed-h">
-              <h4>推廣寵物飼養教育，讓愛更加專業</h4>
-
-            </div>
-            <div className="photo"><img src={p3_photo} alt="policy_photo" /></div>
-          </div>
+          <Polices openModal={openModal} />
         </div>
       </section>
 
@@ -184,7 +163,7 @@ export const Content = () => {
         </div>
         <div className="m-b-64"></div>
       </section>
-      <ArticlesModal isModalOpen={isModalOpen} selectedItem={selectedItem} selectedIndex={selectedIndex} closeModal={closeModal} />
+      <ItemsModal isModalOpen={isModalOpen} selectedItem={selectedItem} selectedIndex={selectedIndex} closeModal={closeModal} />
 
     </main>
   );

@@ -10,7 +10,7 @@ export type ArticleItem = {
   content: string;
   imageNode: React.ReactNode;
 };
-export const items: ArticleItem[] = [
+export const articleItems: ArticleItem[] = [
   {
     time: '2023/12/26',
     title: '參與台北寵物論壇，爭取貓咪友善環境',
