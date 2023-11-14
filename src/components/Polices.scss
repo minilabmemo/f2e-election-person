@@ -1,5 +1,11 @@
 @import '../styles/global_all.scss';
 
+.policies_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .policies {
   margin: auto;
@@ -67,4 +73,37 @@
   // width: 656.73px;
   width: calc(((656.73)/1920 * 100vw));
   height: 334.17px;
+}
+
+
+img.back {
+  transform: rotate(180deg);
+}
+
+.control_btn {
+  background-color: transparent;
+  border: none;
+
+}
+
+.carousel_wrap {
+  height: 8.8rem;
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $space-24;
+}
+
+.control_circle {
+
+  width: 12px;
+  height: 12px;
+  border-radius: 500px;
+  opacity: 0.4;
+  background: $primary-theme-1;
+
+  &.active {
+    opacity: 1;
+  }
 }
