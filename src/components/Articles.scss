@@ -20,13 +20,10 @@
 
     @include ipad-screen {
       width: 100%;
-
     }
   }
 
-  .main.photo {
-    height: 76%;
-  }
+
 
   .aside {
     display: flex;
@@ -38,40 +35,53 @@
       gap: $space-16;
     }
 
-    .photo {
-      width: 33%;
-    }
-
     .content-group {
       width: 67%
     }
-
-
   }
 
-  .time {
-    font-size: $text-small-font-size-14;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $gray;
-  }
 
-  .content {
-    font-size: $font-size-16;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
 
-  .more {
-    font-size: $font-size-16;
-    font-weight: 600;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
+}
 
-  }
+.article_content {
+  font-size: $font-size-16;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.article_more {
+  font-size: $font-size-16;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.article_content {
+  font-size: $font-size-16;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.article_time {
+  font-size: $text-small-font-size-14;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray;
+}
+
+.main_article_photo {
+  height: 76%;
+}
+
+.aside_article_photo {
+  width: 33%;
 }

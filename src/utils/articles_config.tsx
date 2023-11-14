@@ -4,7 +4,13 @@ import a1_photo from "../assets/images/a1_photo.png"
 import a2_photo from "../assets/images/a2_photo.png"
 import a3_photo from "../assets/images/a3_photo.png"
 import a4_photo from "../assets/images/a4_photo.png"
-export const items = [
+export type ArticleItem = {
+  time: string;
+  title: string;
+  content: string;
+  imageNode: React.ReactNode;
+};
+export const items: ArticleItem[] = [
   {
     time: '2023/12/26',
     title: '參與台北寵物論壇，爭取貓咪友善環境',
