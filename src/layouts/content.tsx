@@ -2,7 +2,7 @@
 import "./Content.scss";
 import banner_photo from "../assets/images/banner.png"
 import idea from "../assets/images/idea.png" //TODO
-import Articles from "../components/Articles";
+import { Articles, ArticlesModal } from "../components/Articles";
 import p1_photo from "../assets/images/p1_photo.png"
 import p2_photo from "../assets/images/p2_photo.png"
 import p3_photo from "../assets/images/p3_photo.png"
@@ -12,6 +12,8 @@ import { PersonBadge } from "../components/PersonBadge";
 
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from "react";
+import { Modal } from "../components/Modal";
+import { ArticleItem } from "../utils/articles_config";
 
 
 
@@ -53,7 +55,20 @@ export const Content = () => {
       setIsAnimated5(true);
     }
   }, [inView5]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState<ArticleItem | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
 
+
+  const openModal = (item: ArticleItem, index: number) => {
+    setSelectedItem(item);
+    setSelectedIndex(index);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <main>
       <div className="banner">
@@ -93,7 +108,7 @@ export const Content = () => {
         <h2 className={`clip-text matou animated-block ${isAnimated2 ? 'fadeIn-no-delay' : ''}`}> 最新活動</h2>
         <div className="m-t-medium"></div>
         <div className={`center animated-block ${isAnimated2 ? 'fadeIn-delay-1' : ''}`}>
-          <Articles />
+          <Articles openModal={openModal} />
         </div>
       </section>
 
@@ -169,6 +184,7 @@ export const Content = () => {
         </div>
         <div className="m-b-64"></div>
       </section>
+      <ArticlesModal isModalOpen={isModalOpen} selectedItem={selectedItem} selectedIndex={selectedIndex} closeModal={closeModal} />
 
     </main>
   );

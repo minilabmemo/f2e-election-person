@@ -8,38 +8,32 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  /* Semi-transparent black background */
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 /* Modal Container */
 .modal {
-  background: #fff;
-  /* White background for the modal */
-  padding: 20px;
+  background: $white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  /* Box shadow for a subtle effect */
-  max-width: 400px;
-  /* Adjust the max-width as needed */
-  width: 200px;
-  height: 200px;
+  height: 60vh;
+
   position: relative;
+  overflow-y: auto;
+
 }
 
 /* Close Button */
 .close-button {
   background: none;
   border: none;
-  font-size: 18px;
   cursor: pointer;
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #333;
-  /* Dark gray color for the close button */
 }
 
 /* Optional: Add transition for a smoother effect */

@@ -72,6 +72,20 @@ h1:not(.matou) {
   }
 }
 
+h2:not(.matou) {
+  @include set-font-size($unit-heading-h2-font-size-inter);
+  line-height: 150%;
+  font-weight: 700;
+
+  @include ipad-screen {
+    @include set-font-size($unit-heading-h2-font-size-inter-mobile);
+  }
+
+  @include phone-x-small-screen {
+    @include set-font-size($unit-heading-h4-font-size-inter-mobile);
+  }
+}
+
 h3:not(.matou) {
   @include set-font-size($unit-heading-h3-font-size-inter);
   line-height: 150%;
@@ -111,4 +125,16 @@ h6:not(.matou) {
   @include ipad-screen {
     @include set-font-size($unit-heading-h6-font-size-inter);
   }
+}
+
+
+.f-w-600 {
+
+  font-weight: 600;
+
+}
+
+.f-normal {
+
+  line-height: 150%;
 }

@@ -1,4 +1,5 @@
 import "./Modal.scss";
+import cancel from "../assets/images/cancel.svg";
 
 interface ModalProps {
   isOpen: boolean;
@@ -11,7 +12,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
     <div className="modal-overlay">
       <div className="modal">
         <button className="close-button" onClick={onClose}>
-          X
+          <img src={cancel} alt="cancel" />
         </button>
         {children}
       </div>

@@ -30,9 +30,15 @@ export const items: ArticleItem[] = [
     imageNode: <img alt="article_photo" src={a3_photo} />
   },
   {
-    time: '2023/12/26',
+    time: '2023/12/27',
     title: '參與台北寵物論壇，爭取貓咪友善環境',
     content: '炎炎夏日的周六，我走進了台北寵物論壇，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！',
+    imageNode: <img alt="article_photo" src={a4_photo} />
+  },
+  {
+    time: '2023/12/25',
+    title: '一起參與台北聖誕寵物論壇，裝扮大賽等你',
+    content: '聖誕寵物裝扮，帶著一副貓耳髮箍，決定要全力宣傳「貓咪至上」的理念！',
     imageNode: <img alt="article_photo" src={a4_photo} />
   },
 ];
