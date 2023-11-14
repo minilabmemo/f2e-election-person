@@ -89,3 +89,12 @@
   overflow: hidden;
 
 }
+
+.share-block {
+  display: flex;
+  justify-content: start;
+  align-self: start;
+  width: 30%;
+  height: 32px;
+  text-wrap: nowrap;
+}

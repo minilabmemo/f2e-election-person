@@ -1,6 +1,9 @@
 import { ArticleItem, articleItems } from "../../utils/articles_config";
 import { PolicyItem, policyItems } from "../../utils/polices_config";
 import { Modal } from "./Modal";
+import icon_fb from "../../assets/images/icon_fb.svg"
+import icon_line from "../../assets/images/icon_line.svg"
+import icon_ig from "../../assets/images/icon_ig.svg"
 import "./ItemsModal.scss";
 interface ItemsModalProps {
   isModalOpen: boolean;
@@ -27,7 +30,17 @@ export const ItemsModal: React.FC<ItemsModalProps> = ({ isModalOpen, selectedIte
             <div className="modal_main">
               <div className="modal_main_photo">{selectedItem.imageNode}</div>
               <h6 className="m-y-8">{selectedItem.title}</h6>
-              <div className="f-normal">分享</div>
+              <div className="f-normal">
+
+                <div className='share-block'>
+                  <div>分享</div>
+                  <img src={icon_fb} alt="icon_fb" className="social-icon" />
+                  <img src={icon_ig} alt="icon_ig" className="social-icon" />
+                  <img src={icon_line} alt="icon_line" className="social-icon" />
+                </div>
+
+
+              </div>
             </div>
             <div className="modal_aside">
               <h2 className="m-y-8 text-orang-dark">{selectedItem.title}</h2>
