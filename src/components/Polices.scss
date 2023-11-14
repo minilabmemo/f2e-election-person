@@ -5,20 +5,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
+
 }
 
 .policies {
-  margin: auto;
+
   display: flex;
   gap: $space-24;
   width: 100%;
   justify-content: start;
   align-items: center;
-
   overflow: hidden;
-  flex-shrink: 0;
-
-
 
   .fixed-h {
     height: 7.2rem;
@@ -39,6 +38,7 @@
 
   border-radius: 32px;
   gap: 32px;
+  flex-wrap: wrap;
 
   .group {
     display: flex;
@@ -50,9 +50,8 @@
 }
 
 .policy_invisible {
-  // visibility: hidden;
   flex-shrink: 0;
-  width: 792px;
+  width: calc(((792)/1920 * 100vw));
   height: 403px;
 }
 
@@ -70,7 +69,6 @@
 }
 
 .policy:not(.active) {
-  // width: 656.73px;
   width: calc(((656.73)/1920 * 100vw));
   height: 334.17px;
 }
