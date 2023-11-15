@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
 
-import logo from "../assets/images/logo.svg"
 import "./Footer.scss";
 import { person_name, person_number } from '../utils/const_config';
 import icon_fb from "../assets/images/icon_fb.svg"

@@ -1,7 +1,5 @@
 import "./Polices.scss";
 import { PolicyItem, policyItems } from "../utils/polices_config";
-
-import { ArticleItem } from "../utils/articles_config";
 import { useEffect, useRef, useState } from "react";
 import control from "../assets/images/control.svg"
 import Button from "./btns/Button";
@@ -123,7 +121,7 @@ export const Polices: React.FC<ItemsProps> = ({ openModal }) => {
         </button>
         {policyItems
           .map((item, index) => (
-            <div className={`control_circle ${focusIndex === index ? "active" : ""}`} onClick={() => handleResetFocus(index)}>
+            <div key={index} className={`control_circle ${focusIndex === index ? "active" : ""}`} onClick={() => handleResetFocus(index)}>
 
             </div>
           ))

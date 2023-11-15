@@ -3,9 +3,7 @@ import "./Content.scss";
 import banner_photo from "../assets/images/banner.png"
 import idea from "../assets/images/idea.png" //TODO
 import { Articles } from "../components/Articles";
-import donate_photo from "../assets/images/donate_photo.png"
-import email from "../assets/images/email.png"
-import Button from "../components/btns/Button";
+
 import { PersonBadge } from "../components/PersonBadge";
 
 import { useInView } from 'react-intersection-observer';
