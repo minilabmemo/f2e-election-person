@@ -30,12 +30,12 @@ export const NavBarMobile = () => {
               政策議題</a>
           </li>
           <li className="link-bottom  p-y-12">
-            <a href="#others" className="nav-wrap">
+            <a href="#services" className="nav-wrap">
               <div className="nav-img-wrap">
                 <img src={nav_events} alt="nav_events" /></div>小額捐款</a>
           </li>
           <li className="link-bottom  p-y-12 ">
-            <a href="#others" className="nav-wrap">
+            <a href="#services" className="nav-wrap">
               <div className="nav-img-wrap"><img src={nav_events} alt="nav_events" />
               </div>民眾服務信箱</a>
           </li>

@@ -4,11 +4,6 @@
 The F2E 六角學院 修煉精神光屋 Mission 1 - 立委競選官網，示範網頁
 - 設計稿特別感謝 [設計師 jhen](https://2023.thef2e.com/users/12061579704041679194) 提供。
 - 網頁網址 [https://minilabmemo.github.io/f2e-election-person/](https://minilabmemo.github.io/f2e-election-person/)
-- 作品畫面
-  - 網頁版 
-<img src="./demo_web.png" >
-  - 手機版（375px)
-<img src="./demo_phone.png" >
 ----
 
 ### 功能說明
@@ -40,7 +35,6 @@ src .
 │   ├── gif
 │   └── images
 ├── components 組件
-│   └── icons
 ├── layouts 頁面
 ├── styles  樣式
 │   ├── animations
