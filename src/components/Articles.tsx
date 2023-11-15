@@ -2,16 +2,13 @@ import "./Articles.scss";
 import { ArticleItem, articleItems } from "../utils/articles_config";
 import Button from "./btns/Button";
 
-import { PolicyItem } from "../utils/polices_config";
-
-//TODO Articles & ArticlesModal more best program?
 
 interface ArticlesProps {
-  openModal: ((item: ArticleItem | PolicyItem, index: number) => void) | null;
+  openModal: ((item: ArticleItem, index: number) => void) | null;
 }
 
 export const Articles: React.FC<ArticlesProps> = ({ openModal }) => {
-  const handleClick = (item: ArticleItem | PolicyItem, index: number) => {
+  const handleClick = (item: ArticleItem, index: number) => {
     if (openModal) {
       openModal(item, index);
     }

@@ -8,7 +8,7 @@ import Button from "./btns/Button";
 
 
 interface ItemsProps {
-  openModal: ((item: ArticleItem | PolicyItem, index: number) => void) | null;
+  openModal: ((item: PolicyItem, index: number) => void) | null;
 }
 
 export const Polices: React.FC<ItemsProps> = ({ openModal }) => {
