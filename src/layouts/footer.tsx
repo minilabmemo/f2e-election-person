@@ -12,7 +12,7 @@ export const Footer = () => {
 
   return (
 
-    <footer className='bg-orange ' >
+    <footer className='bg-orange footer-padding' >
       <div className="left">
         <div className="tag-person-small">
           <div className="number m-r-8">{person_number}</div>

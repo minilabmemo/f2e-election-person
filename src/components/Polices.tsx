@@ -97,13 +97,17 @@ export const Polices: React.FC<ItemsProps> = ({ openModal }) => {
         {policyItems
 
           .map((item, index) => (
-            <div className={`policy ${focusIndex === index ? "active" : ""}`}
+            <div className={`policy p-y-32 p-x-32  ${focusIndex === index ? "active" : ""}`}
               ref={focusIndex === index ? objectRef : null}
               key={index} >
               <div className="policy_photo"> {item.imageNode}</div>
-              <div className="group ">
+              <div className="policy_text_group ">
+                <div className="m-b-16"></div>
+                <div><span className="policy_tag"> {item.tag}</span></div>
+                <div className="m-b-16"></div>
                 <h4>{item.title}</h4>
                 {item.sub_title && <h4>{item.sub_title}</h4>}
+                <div className="m-b-16"></div>
                 <div onClick={() => handleClick(item, index)}> <Button className="text-white  bg-orang-dark">查看</Button></div>
 
               </div>

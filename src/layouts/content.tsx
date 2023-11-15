@@ -4,6 +4,7 @@ import banner_photo from "../assets/images/banner.png"
 import idea from "../assets/images/idea.png" //TODO
 import { Articles } from "../components/Articles";
 import donate_photo from "../assets/images/donate_photo.png"
+import email from "../assets/images/email.png"
 import Button from "../components/btns/Button";
 import { PersonBadge } from "../components/PersonBadge";
 
@@ -73,12 +74,12 @@ export const Content = () => {
     <main>
       <div className="banner">
         <div className="m-t-large"></div>
-        <h1 className="clip-text matou title-wrap fadeIn-1 "> <div>台灣的明天 </div> <div>&nbsp;喵先鋪路</div></h1>
-        <div className="group fadeIn-2 ">
+        <h1 className="clip-text matou title-wrap fadeIn-delay-3s "> <div>台灣的明天 </div> <div>&nbsp;喵先鋪路</div></h1>
+        <div className="group fadeIn-delay-4s ">
           <div className="tag bg-primary m-r-16"> <div className="text">2024 立委參選人</div></div>
           <PersonBadge />
         </div>
-        <div className="photo fadeIn-3 "><img src={banner_photo} alt="banner_photo" /></div>
+        <div className="photo fadeIn-delay-5s "><img src={banner_photo} alt="banner_photo" /></div>
       </div>
       <div className="news-ticker">
         <h3 className="marquee-text matou">為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望</h3>
@@ -142,9 +143,11 @@ export const Content = () => {
               <h4 className="matou">民眾服務信箱</h4>
               <div className="content">親愛的鄉親，每一位市民的意見都是我們社區前進的原動力</div>
 
+
             </div>
             <div className="more">
               <div><Button className="bg-white text-bold-black  ">填寫表單</Button></div>
+              <div className="photo"><img src={email} alt="email" /></div>
             </div>
           </div>
         </div>

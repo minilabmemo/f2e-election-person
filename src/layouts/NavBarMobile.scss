@@ -2,6 +2,11 @@
 
 .space-bottom {
   margin: 6.8rem;
+  display: none;
+
+  @include ipad-screen {
+    display: unset;
+  }
 }
 
 .menu-bottom {
