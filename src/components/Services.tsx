@@ -17,7 +17,7 @@ export const Services: React.FC<ItemsProps> = ({ openModal }) => {
     <div className="services text-white  content-wrap">
       {serviceItems
         .map((item, index) => (
-          <div className={`service ${item.bg_color}`}>
+          <div className={`service ${item.bg_color}`} key={index}>
             <div className="wrap">
               <h4 className="matou">{item.title}</h4>
               <div className="service_content">{item.sub_title}</div>

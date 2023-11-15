@@ -7,6 +7,7 @@ import icon_ig from "../../assets/images/icon_ig.svg"
 import share_email from "../../assets/images/share_email.png"
 import "./ItemsModal.scss";
 import { PropertyType, ServiceItem } from "../../utils/services_config";
+import { useEffect, useState } from "react";
 
 interface ItemsModalProps {
   isModalOpen: boolean;
@@ -16,7 +17,17 @@ interface ItemsModalProps {
 }
 
 
-function ItemsModalStyle({ selectedItem, selectedIndex }: { selectedItem: ArticleItem | PolicyItem, selectedIndex: number }) {
+function ItemsModalStyle({ initSelectedItem, initSelectedIndex }: { initSelectedItem: ArticleItem | PolicyItem, initSelectedIndex: number }) {
+
+  const [selectedItem, setSelectedItem] = useState(initSelectedItem) //當更多區塊按下會替換掉目前觀看文章區塊
+  const [selectedIndex, setSelectedIdex] = useState(initSelectedIndex)
+  const handleClick = (item: ArticleItem | PolicyItem, index: number) => {
+
+    setSelectedItem(item);
+    setSelectedIdex(index);
+  };
+
+
   return (
     <>
       <div className="modal_main">
@@ -50,20 +61,22 @@ function ItemsModalStyle({ selectedItem, selectedIndex }: { selectedItem: Articl
           <div className="modal_more_contents">
             {selectedItem && 'policyProperty' in selectedItem ? (
               <> {policyItems
+                .map((item, index) => ({ ...item, originalIndex: index })) // Add originalIndex to each item
                 .filter((item, index) => index !== selectedIndex)
                 .slice(0, 2)
                 .map((item, index) => (
-                  <div className="modal_more_content" key={index + 1} >
+                  <div className="modal_more_content" key={index} onClick={() => handleClick(item, item.originalIndex)}>
                     <div className="modal_more_photo">{item.imageNode}</div>
                     <div className="m-y-8 f-normal">{item.title}</div>
                   </div>
                 ))}</>
             ) : (
               <> {articleItems
+                .map((item, index) => ({ ...item, originalIndex: index })) // Add originalIndex to each item
                 .filter((item, index) => index !== selectedIndex)
                 .slice(0, 2)
                 .map((item, index) => (
-                  <div className="modal_more_content" key={index + 1} >
+                  <div className="modal_more_content" key={index} onClick={() => handleClick(item, item.originalIndex)}>
                     <div className="modal_more_photo">{item.imageNode}</div>
                     <div className="m-y-8 f-normal">{item.title}</div>
                   </div>
@@ -215,7 +228,7 @@ export const ItemsModal: React.FC<ItemsModalProps> = ({ isModalOpen, selectedIte
               )
               :
               (
-                <ItemsModalStyle selectedItem={selectedItem} selectedIndex={selectedIndex} />
+                <ItemsModalStyle initSelectedItem={selectedItem} initSelectedIndex={selectedIndex} />
 
               )
             }
