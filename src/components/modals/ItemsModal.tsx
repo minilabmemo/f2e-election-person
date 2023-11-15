@@ -121,7 +121,10 @@ function ServicesModalStyle({ selectedItem, selectedIndex }: { selectedItem: Ser
             )
               :
               <>
-                <div className="share_img_wrap">    <img src={share_email} alt="share_email" /></div>
+
+                <div className="share_img_wrap">
+                  <img src={share_email} alt="share_email" />
+                </div>
 
               </>
             }
