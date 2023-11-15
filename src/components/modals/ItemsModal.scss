@@ -116,16 +116,21 @@
 
   @include pc-small-screen {
     width: 100%;
+    min-height: 400px;
   }
 }
 
 .service_left {
   display: flex;
-  padding: 60px;
+  padding: $space-40;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
   border-radius: var(--spacer-24, 24px);
+
+  @include pc-small-screen {
+    padding: $space-16;
+  }
 
 }
 
@@ -138,12 +143,12 @@
   padding: 52px 116px;
 
   @include pc-small-screen {
-    padding: 16px;
+    padding: 8px;
   }
 
   .img_wrap {
     width: 336px;
-    height: 348px;
+    height: auto;
   }
 
 
@@ -168,6 +173,10 @@
   border-radius: var(--spacer-16, 16px);
   border: 2px solid var(--primary, #DA7D4A);
   background: #FFF;
+
+  @include ipad-screen {
+    flex-direction: column;
+  }
 
   .title {
     color: var(--primary, #DA7D4A);
