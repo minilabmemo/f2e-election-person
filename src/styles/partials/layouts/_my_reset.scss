@@ -6,22 +6,52 @@
 img {
   width: 100%;
   height: auto;
+  -webkit-user-drag: none;
 }
 
-.link {
+a {
   text-decoration: none;
 
 }
 
-a.link:visited {
-  color: #000;
+a:link {
+  color: unset;
   background-color: transparent;
   text-decoration: none;
 }
 
+a:visited {
+  color: unset;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+
 //debug use
 // * {
-//   outline: 2px solid red;
+//   outline: 2px solid red !important;
+//   ;
 // }
 
 // * {

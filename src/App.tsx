@@ -1,12 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
 
-import { Header } from './layouts/header';
+import { Content } from './layouts/Content';
+import { Footer } from './layouts/Footer';
+import { Header } from './layouts/Header';
+import gif from "./assets/gif/loading.gif"
+import { useEffect, useState } from 'react';
+import { NavBarMobile } from './layouts/NavBarMobile';
 
 function App() {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = gif;
+    img.onload = () => {
+      setIsImageLoaded(true);
+    };
+  }, []);
+
   return (
     <div className="App">
-      <Header></Header>
+
+      <div className="base">
+        <div className="loading-wrap">
+          <div className="gif-wrap">  {isImageLoaded ? (
+            <img src={gif} alt="gif" />
+          ) : (
+            <p >Loading...</p>
+          )}</div>
+        </div>
+        {isImageLoaded && (
+          <div className="container">
+            <Header></Header>
+            <Content></Content>
+            <Footer></Footer>
+            <NavBarMobile></NavBarMobile>
+          </div>
+        )}
+      </div>
+
     </div>
   );
 }

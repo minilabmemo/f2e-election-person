@@ -1,9 +1,14 @@
 @charset "UTF-8";
 
-@import './partials/global/media-query';
-
-@import './partials/global/variables';
-@import './partials/global/mixins';
 
 @import './partials/layouts/base';
 @import './partials/layouts/my_reset';
+@import './partials/layouts/effects';
+
+@import './partials/min_classs/space';
+@import './partials/min_classs/color';
+@import './partials/min_classs/font';
+@import './partials/min_classs/aligin';
+
+
+@import './animations//animation.css';

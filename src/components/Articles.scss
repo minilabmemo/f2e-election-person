@@ -1,0 +1,88 @@
+@import '../styles/global_all.scss';
+
+
+
+.articles {
+  color: $text-primary;
+  display: flex;
+  flex-wrap: wrap;
+  width: 68.75%;
+  gap: $space-24;
+
+  @include ipad-screen {
+    gap: 0;
+
+  }
+
+  .main, .aside {
+    width: calc(50% - $space-24/2);
+    height: inherit;
+
+    @include ipad-screen {
+      width: 100%;
+    }
+  }
+
+
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+    gap: $space-24;
+
+    .article {
+      display: flex;
+      gap: $space-16;
+    }
+
+    .content-group {
+      width: 67%
+    }
+  }
+
+
+
+}
+
+.article_content {
+  font-size: $font-size-16;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.article_more {
+  font-size: $font-size-16;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.article_content {
+  font-size: $font-size-16;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.article_time {
+  font-size: $text-small-font-size-14;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $gray;
+}
+
+.main_article_photo {
+  height: 76%;
+  border-radius: $space-24;
+}
+
+.aside_article_photo {
+  width: 33%;
+}

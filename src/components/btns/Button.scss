@@ -1,0 +1,26 @@
+@import '../../styles/global_all.scss';
+
+
+.btn {
+  display: flex;
+  padding: $space-16 $space-24;
+  align-items: center;
+  gap: var(--spacer-8, 8px);
+  border-radius: 500px;
+  border: 1px solid var(--default-white, #FFF);
+  line-height: 150%;
+  text-wrap: nowrap;
+
+  .icon-wrap {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.black {
+  color: $text-primary
+}

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 import './styles/normalize.css';
 import './styles/fonts/inter.css';
+import './styles/fonts/MantouSans.css';
 import './styles/style.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

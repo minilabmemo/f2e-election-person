@@ -1,0 +1,58 @@
+@import '../styles/global_all.scss';
+
+.space-bottom {
+
+  display: none;
+
+  @include ipad-screen {
+    margin: 3.4rem;
+
+
+    display: inline-block;
+  }
+}
+
+.menu-bottom {
+  display: none;
+
+  @include ipad-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #F8FAFC, #F8FAFC),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+    position: fixed;
+    bottom: 0;
+
+
+  }
+}
+
+.link-bottom {
+  width: 18.75vw;
+}
+
+.link-list-bottom {
+  display: flex;
+  width: 100vw;
+  height: 6.8rem;
+  justify-content: center;
+  gap: .8rem;
+}
+
+.nav-img-wrap {
+  font-size: $font-size-10;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+
+.nav-wrap {
+  font-size: $font-size-10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: .4rem;
+
+}

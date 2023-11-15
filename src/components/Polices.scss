@@ -1,0 +1,150 @@
+@import '../styles/global_all.scss';
+
+.policies_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+
+.policies {
+
+  display: flex;
+  gap: $space-24;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+
+  .fixed-h {
+    height: 7.2rem;
+  }
+
+
+
+}
+
+
+.policy {
+  background-color: $white;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 32px;
+  gap: 32px;
+  flex-wrap: wrap;
+
+  @include pc-small-screen {
+    flex-direction: column;
+  }
+
+}
+
+.policy_invisible {
+  flex-shrink: 0;
+  width: calc(((792)/1920 * 100vw));
+  height: 403px;
+}
+
+
+.policy_text_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 35%;
+
+  @include pc-small-screen {
+    width: 100%;
+  }
+
+}
+
+.policy_tag {
+  color: rgba(52, 63, 80, 0.80);
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  padding: .4rem $space-12;
+  justify-content: center;
+  align-items: center;
+  border-radius: 414.604px;
+  background: #BEEADB;
+}
+
+.policy.active {
+  width: calc(((792)/1920 * 100vw));
+  min-width: 311px;
+  height: 403px;
+
+  @include pc-small-screen {
+    height: 100%;
+  }
+
+  .policy_photo {
+    width: calc(((428)/792 * 100%));
+
+    @include pc-small-screen {
+      width: 100%;
+      min-width: 279px;
+    }
+  }
+}
+
+.policy:not(.active) {
+  width: calc(((656.73)/1920 * 100vw));
+  min-width: 357px;
+  height: 334.17px;
+
+  @include pc-small-screen {
+    height: 100%;
+  }
+
+  .policy_photo {
+    width: calc(355/656 * 100%);
+
+    @include pc-small-screen {
+      width: 80%;
+      min-width: 231px;
+    }
+  }
+
+}
+
+
+img.back {
+  transform: rotate(180deg);
+}
+
+.control_btn {
+  background-color: transparent;
+  border: none;
+
+}
+
+.carousel_wrap {
+  height: 8.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $space-24;
+}
+
+.control_circle {
+
+  width: 12px;
+  height: 12px;
+  border-radius: 500px;
+  opacity: 0.4;
+  background: $primary-theme-1;
+
+  &.active {
+    opacity: 1;
+  }
+}

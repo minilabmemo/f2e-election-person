@@ -1,26 +1,15 @@
-@import '../global/variables';
-
+@import '../../global_all';
 
 html {
   font-size: $base-font-size;
 }
 
 body {
-  font-family: $font-family;
+  font-family: $font-inter;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: $base-body-font-size;
-
-  h1 {
-    font-size: $type-heading-h1-font-size
-  }
-
-  @include phone-screen {
-    h1 {
-      font-size: $type-mobile-heading-h1-font-size;
-    }
-
-  }
+  color: $text-primary;
 }
 
 .base {
@@ -32,4 +21,55 @@ body {
   width: clamp(320px, 100%, 1920px);
   margin: 0 auto;
   font-family: $font-inter;
+
+}
+
+.content-wrap {
+  width: calc((1320 / 1920) * 100vw);
+
+  @include ipad-screen {
+    width: calc((696 / 768) * 100vw);
+  }
+
+  @include phone-screen-576 {
+    width: calc((540 / 576) * 100vw);
+
+  }
+
+  @include phone-screen {
+    width: calc((343 / 375) * 100vw);
+
+  }
+
+  @include phone-x-small-screen {
+    width: calc((310 / 320) * 100vw);
+  }
+}
+
+
+.full-wrap {
+  width: 100%;
+  max-width: 1920px;
+
+  @include ipad-screen {
+
+    max-width: 768px;
+  }
+
+  @include phone-screen-576 {
+
+    max-width: 576px;
+
+  }
+
+  @include phone-screen {
+
+    max-width: 375px;
+
+  }
+
+  @include phone-x-small-screen {
+
+    max-width: 320px;
+  }
 }

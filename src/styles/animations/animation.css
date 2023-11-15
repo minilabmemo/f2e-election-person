@@ -1,0 +1,88 @@
+@keyframes marquee {
+  0% {
+
+    transform: translateX(100vw);
+  }
+
+
+
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+
+  }
+}
+
+
+
+@keyframes showAndFadeOut {
+
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+    /*最後一刻淡化且要整個消失才不會蓋到首頁功能*/
+  }
+}
+
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+
+  35% {
+    transform: scale(1.5);
+  }
+
+  75% {
+    transform: scale(1.75);
+    opacity: .5;
+  }
+
+  100% {
+    transform: scale(1.75);
+    opacity: 1;
+  }
+
+
+}
