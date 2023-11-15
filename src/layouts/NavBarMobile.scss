@@ -1,11 +1,14 @@
 @import '../styles/global_all.scss';
 
 .space-bottom {
-  margin: 6.8rem;
+
   display: none;
 
   @include ipad-screen {
-    display: unset;
+    margin: 3.4rem;
+
+
+    display: inline-block;
   }
 }
 

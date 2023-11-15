@@ -15,6 +15,7 @@ import { ArticleItem } from "../utils/articles_config";
 import { PolicyItem } from "../utils/polices_config";
 import { Polices } from "../components/Polices";
 import { ItemsModal } from "../components/modals/ItemsModal";
+import { Services } from "../components/Services";
 
 
 
@@ -124,33 +125,8 @@ export const Content = () => {
       </section>
 
 
-      <section ref={ref4} className={`bg-white  section-space animated-block ${isAnimated4 ? 'animate-fade-in' : ''}`} id="others">
-        <div className="others text-white  content-wrap">
-          <div className="other bg-orang-dark">
-            <div className="wrap">
-              <h4 className="matou">小額支持喵喵</h4>
-              <div className="content">您的小筆捐款，是每隻毛孩未來的大大動力！</div>
-
-            </div>
-            <div className="more">
-              <div className="btn-wrap"><Button className="bg-white text-bold-black  ">小額捐款</Button></div>
-              <div className="photo"><img src={donate_photo} alt="donate_photo" /></div>
-            </div>
-
-          </div>
-          <div className="other bg-primary">
-            <div className="title-group">
-              <h4 className="matou">民眾服務信箱</h4>
-              <div className="content">親愛的鄉親，每一位市民的意見都是我們社區前進的原動力</div>
-
-
-            </div>
-            <div className="more">
-              <div><Button className="bg-white text-bold-black  ">填寫表單</Button></div>
-              <div className="photo"><img src={email} alt="email" /></div>
-            </div>
-          </div>
-        </div>
+      <section ref={ref4} className={`bg-white  section-space animated-block ${isAnimated4 ? 'animate-fade-in' : ''}`} id="services">
+        <Services openModal={openModal}></Services>
       </section>
 
 
