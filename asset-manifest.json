@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/f2e-election-person/static/css/main.1907e2a3.css",
-    "main.js": "/f2e-election-person/static/js/main.f999a0ea.js",
+    "main.js": "/f2e-election-person/static/js/main.a540e069.js",
     "static/js/787.99739571.chunk.js": "/f2e-election-person/static/js/787.99739571.chunk.js",
     "static/media/MantouSans-Regular.woff2": "/f2e-election-person/static/media/MantouSans-Regular.3245f77f60265c1db651.woff2",
     "static/media/idea.png": "/f2e-election-person/static/media/idea.2050edbfb0ecc448c399.png",
@@ -27,11 +27,11 @@
     "static/media/icon_fb.svg": "/f2e-election-person/static/media/icon_fb.febfb3ec4baf13bc0413d21bbe655cc7.svg",
     "static/media/control.svg": "/f2e-election-person/static/media/control.4718fa93b895c33c73e28e2799cd64e2.svg",
     "main.1907e2a3.css.map": "/f2e-election-person/static/css/main.1907e2a3.css.map",
-    "main.f999a0ea.js.map": "/f2e-election-person/static/js/main.f999a0ea.js.map",
+    "main.a540e069.js.map": "/f2e-election-person/static/js/main.a540e069.js.map",
     "787.99739571.chunk.js.map": "/f2e-election-person/static/js/787.99739571.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1907e2a3.css",
-    "static/js/main.f999a0ea.js"
+    "static/js/main.a540e069.js"
   ]
 }
