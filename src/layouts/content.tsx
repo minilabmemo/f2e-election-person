@@ -16,6 +16,7 @@ import { PolicyItem } from "../utils/polices_config";
 import { Polices } from "../components/Polices";
 import { ItemsModal } from "../components/modals/ItemsModal";
 import { Services } from "../components/Services";
+import { ServiceItem } from "../utils/services_config";
 
 
 
@@ -58,11 +59,10 @@ export const Content = () => {
     }
   }, [inView5]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState<ArticleItem | PolicyItem | null>(null);
+  const [selectedItem, setSelectedItem] = useState<ArticleItem | PolicyItem | ServiceItem | null>(null);
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
-
-  const openModal = (item: ArticleItem | PolicyItem, index: number) => {
+  const openModal = (item: ArticleItem | PolicyItem | ServiceItem, index: number) => {
     setSelectedItem(item);
     setSelectedIndex(index);
     setIsModalOpen(true);
