@@ -22,30 +22,21 @@ main {
   background-color: $white;
   display: flex;
   align-items: center;
-  // height: 85.8rem;
   flex-direction: column;
   gap: $space-16;
 
   .photo {
-    height: 53.8rem;
-    vertical-align: bottom;
-
-    @include ipad-screen {
-      width: 343px;
-      height: 254.82px
+    img {
+      vertical-align: bottom;
     }
 
-    @include phone-screen {
-      width: 327px;
-      height: 255px
-    }
   }
 
   .title-wrap {
     display: flex;
     align-items: center;
 
-    @include ipad-screen {
+    @include pc-small-screen {
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -53,18 +44,11 @@ main {
 
   .group {
     display: flex;
-    height: 8.4rem;
+
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 
-    @include phone-screen {
-      height: 12rem;
-    }
-
-    @include phone-x-small-screen {
-      height: 20rem;
-    }
 
   }
 

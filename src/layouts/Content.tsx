@@ -23,7 +23,9 @@ import { ServiceItem } from "../utils/services_config";
 
 
 export const Content = () => {
-  const ipad768 = getComputedStyle(document.documentElement).getPropertyValue('--ipad-768px');
+  const pictureLarge = getComputedStyle(document.documentElement).getPropertyValue('--picture-large');
+  const pictureMedium = getComputedStyle(document.documentElement).getPropertyValue('--picture-medium');
+  const pictureSmall = getComputedStyle(document.documentElement).getPropertyValue('--picture-small');
 
   const [ref1, inView1] = useInView({ triggerOnce: true, });
   const [ref2, inView2] = useInView({ triggerOnce: true, });
@@ -89,15 +91,15 @@ export const Content = () => {
         <div className="photo fadeIn-delay-3s ">
           <picture>
             <source
-              media={`(min-width: 769px)`}
+              media={`${pictureLarge}`}
               srcSet={banner_photo_webp}
               type="image/webp" />
             <source
-              media="(min-width: 578px)"
+              media={`${pictureMedium}`}
               srcSet={banner_ipad}
               type="image/png" />
             <source
-              media="(min-width: 320px)"
+              media={`${pictureSmall}`}
               srcSet={banner_phone}
               type="image/png" />
             <img src={banner_photo} alt="banner_photo" />
