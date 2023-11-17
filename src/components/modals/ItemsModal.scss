@@ -5,22 +5,25 @@
 .modal_box {
   width: calc((1400/1920) *100vw);
   max-width: 1400px;
-  height: 100%;
+
   display: flex;
   flex-direction: column;
 
-
+  @include phone-screen-576 {
+    width: 80vw;
+  }
 }
 
 .modal_title {
   height: 9.6rem;
   display: flex;
   align-items: center;
+
 }
 
 .modal_content {
   display: flex;
-  height: 80%;
+
   gap: 3.2rem;
   justify-content: center;
   align-items: flex-start;
@@ -82,6 +85,10 @@
 
 .modal_more_content {
   width: 30%;
+
+  @include phone-screen-576 {
+    width: 50%;
+  }
 }
 
 .modal_more_photo {
@@ -106,7 +113,7 @@
   width: 100%;
   gap: $space-32;
   justify-content: stretch;
-  align-items: center;
+  align-items: stretch;
   height: 100%;
 
 }
@@ -114,7 +121,6 @@
 .service_left, .service_right {
   width: calc(50% - $space-32/2);
 
-  position: relative;
 
   @include pc-small-screen {
     width: 100%;
@@ -141,11 +147,8 @@
   align-items: center;
 
   width: 100%;
-  padding: 52px 116px;
+  padding: 10% 20%;
 
-  @include pc-small-screen {
-    padding: 8px;
-  }
 
   .img_wrap {
     width: 336px;
@@ -172,8 +175,12 @@
   align-items: center;
   align-self: stretch;
   border-radius: var(--spacer-16, 16px);
-  border: 2px solid var(--primary, #DA7D4A);
+
   background: #FFF;
+
+  &:hover {
+    border: 2px solid $primary-theme-1;
+  }
 
   @include ipad-screen {
     flex-direction: column;
@@ -252,10 +259,6 @@
 
 }
 
-.title_wrap {
-  height: 50%;
-  ;
-}
 
 .share_wrap {
   display: flex;
