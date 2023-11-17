@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/f2e-election-person/static/css/main.62377f71.css",
-    "main.js": "/f2e-election-person/static/js/main.fe44f0ee.js",
+    "main.css": "/f2e-election-person/static/css/main.bfe14773.css",
+    "main.js": "/f2e-election-person/static/js/main.4133661b.js",
     "static/js/787.99739571.chunk.js": "/f2e-election-person/static/js/787.99739571.chunk.js",
     "static/media/MantouSans-Regular.woff2": "/f2e-election-person/static/media/MantouSans-Regular.3245f77f60265c1db651.woff2",
     "static/media/idea_ipad.png": "/f2e-election-person/static/media/idea_ipad.ba6c271bcf1e70f4c1e4.png",
@@ -21,13 +21,17 @@
     "static/media/banner_phone.png": "/f2e-election-person/static/media/banner_phone.bb11d498322f2f6ab092.png",
     "static/media/donate_photo.png": "/f2e-election-person/static/media/donate_photo.bb7586da9c74b1e11bd8.png",
     "static/media/email.png": "/f2e-election-person/static/media/email.0f6285a2f313d6cb8575.png",
+    "static/media/idea_ipad.webp": "/f2e-election-person/static/media/idea_ipad.78b7b9805935ee58b3ca.webp",
     "static/media/idea.webp": "/f2e-election-person/static/media/idea.962e17dbc85798db5dd5.webp",
     "static/media/a2_photo.webp": "/f2e-election-person/static/media/a2_photo.e9cfbdef8143c415a619.webp",
     "static/media/a1_photo.webp": "/f2e-election-person/static/media/a1_photo.9d02c744187b0304b582.webp",
     "static/media/banner.webp": "/f2e-election-person/static/media/banner.d76047089785476a7740.webp",
     "static/media/a4_photo.webp": "/f2e-election-person/static/media/a4_photo.c950fda924c422f93f97.webp",
     "static/media/a3_photo.webp": "/f2e-election-person/static/media/a3_photo.b805c4815e8b6bec5228.webp",
+    "static/media/idea_phone.webp": "/f2e-election-person/static/media/idea_phone.baec6b9b206885c60cc6.webp",
+    "static/media/banner_ipad.webp": "/f2e-election-person/static/media/banner_ipad.1c5cc09bbb502a0555fa.webp",
     "static/media/brand.svg": "/f2e-election-person/static/media/brand.92fb5862b070fab2aa7910a75740ffd8.svg",
+    "static/media/banner_phone.webp": "/f2e-election-person/static/media/banner_phone.0b5c3d73862d68d7d9f7.webp",
     "static/media/icon_ig.svg": "/f2e-election-person/static/media/icon_ig.1ee2839f396d033ddae1d5059745fa91.svg",
     "static/media/icon_line.svg": "/f2e-election-person/static/media/icon_line.5324ef17f842b831cfca8ea4cd7cf97d.svg",
     "static/media/nav_events.svg": "/f2e-election-person/static/media/nav_events.d3f9f3680741aa6c0aff9b19a65e36f2.svg",
@@ -36,12 +40,12 @@
     "static/media/cancel.svg": "/f2e-election-person/static/media/cancel.3b4595bedfaf19c913f2a08ecfa3da06.svg",
     "static/media/icon_fb.svg": "/f2e-election-person/static/media/icon_fb.febfb3ec4baf13bc0413d21bbe655cc7.svg",
     "static/media/control.svg": "/f2e-election-person/static/media/control.4718fa93b895c33c73e28e2799cd64e2.svg",
-    "main.62377f71.css.map": "/f2e-election-person/static/css/main.62377f71.css.map",
-    "main.fe44f0ee.js.map": "/f2e-election-person/static/js/main.fe44f0ee.js.map",
+    "main.bfe14773.css.map": "/f2e-election-person/static/css/main.bfe14773.css.map",
+    "main.4133661b.js.map": "/f2e-election-person/static/js/main.4133661b.js.map",
     "787.99739571.chunk.js.map": "/f2e-election-person/static/js/787.99739571.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62377f71.css",
-    "static/js/main.fe44f0ee.js"
+    "static/css/main.bfe14773.css",
+    "static/js/main.4133661b.js"
   ]
 }
