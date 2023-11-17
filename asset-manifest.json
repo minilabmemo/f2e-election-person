@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/f2e-election-person/static/css/main.07e7c8e0.css",
+    "main.css": "/f2e-election-person/static/css/main.62377f71.css",
     "main.js": "/f2e-election-person/static/js/main.fe44f0ee.js",
     "static/js/787.99739571.chunk.js": "/f2e-election-person/static/js/787.99739571.chunk.js",
     "static/media/MantouSans-Regular.woff2": "/f2e-election-person/static/media/MantouSans-Regular.3245f77f60265c1db651.woff2",
@@ -36,12 +36,12 @@
     "static/media/cancel.svg": "/f2e-election-person/static/media/cancel.3b4595bedfaf19c913f2a08ecfa3da06.svg",
     "static/media/icon_fb.svg": "/f2e-election-person/static/media/icon_fb.febfb3ec4baf13bc0413d21bbe655cc7.svg",
     "static/media/control.svg": "/f2e-election-person/static/media/control.4718fa93b895c33c73e28e2799cd64e2.svg",
-    "main.07e7c8e0.css.map": "/f2e-election-person/static/css/main.07e7c8e0.css.map",
+    "main.62377f71.css.map": "/f2e-election-person/static/css/main.62377f71.css.map",
     "main.fe44f0ee.js.map": "/f2e-election-person/static/js/main.fe44f0ee.js.map",
     "787.99739571.chunk.js.map": "/f2e-election-person/static/js/787.99739571.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07e7c8e0.css",
+    "static/css/main.62377f71.css",
     "static/js/main.fe44f0ee.js"
   ]
 }
