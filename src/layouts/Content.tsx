@@ -1,7 +1,10 @@
 
 import "./Content.scss";
 import banner_photo from "../assets/images/banner.png"
+import banner_ipad from "../assets/images/banner_ipad.png"
+import banner_phone from "../assets/images/banner_phone.png"
 import banner_photo_webp from "../assets/images/banner.webp"
+
 import idea from "../assets/images/idea.png" //TODO
 import { Articles } from "../components/Articles";
 
@@ -86,9 +89,17 @@ export const Content = () => {
         <div className="photo fadeIn-delay-3s ">
           <picture>
             <source
-              media={`(min-width: ${ipad768})`}
+              media={`(min-width: 769px)`}
               srcSet={banner_photo_webp}
               type="image/webp" />
+            <source
+              media="(min-width: 578px)"
+              srcSet={banner_ipad}
+              type="image/png" />
+            <source
+              media="(min-width: 320px)"
+              srcSet={banner_phone}
+              type="image/png" />
             <img src={banner_photo} alt="banner_photo" />
           </picture>
 
