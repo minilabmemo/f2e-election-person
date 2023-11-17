@@ -1,5 +1,12 @@
 @import '../../global_all';
 
+:root {
+  --picture-large: (min-width: 769px); //769px 以上螢幕
+  --picture-medium: (min-width: 578px); //578px 以上 ipad
+  --picture-small: (min-width: 320px); //320px 以上 手機
+
+}
+
 html {
   font-size: $base-font-size;
 }
