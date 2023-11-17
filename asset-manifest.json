@@ -1,23 +1,32 @@
 {
   "files": {
-    "main.css": "/f2e-election-person/static/css/main.11f7d28b.css",
-    "main.js": "/f2e-election-person/static/js/main.529deaa1.js",
+    "main.css": "/f2e-election-person/static/css/main.07e7c8e0.css",
+    "main.js": "/f2e-election-person/static/js/main.fe44f0ee.js",
     "static/js/787.99739571.chunk.js": "/f2e-election-person/static/js/787.99739571.chunk.js",
     "static/media/MantouSans-Regular.woff2": "/f2e-election-person/static/media/MantouSans-Regular.3245f77f60265c1db651.woff2",
+    "static/media/idea_ipad.png": "/f2e-election-person/static/media/idea_ipad.ba6c271bcf1e70f4c1e4.png",
     "static/media/idea.png": "/f2e-election-person/static/media/idea.2050edbfb0ecc448c399.png",
     "static/media/a2_photo.png": "/f2e-election-person/static/media/a2_photo.12d1871ec5042ec62aba.png",
     "static/media/a1_photo.png": "/f2e-election-person/static/media/a1_photo.6255398fc2a057cdfa1b.png",
     "static/media/a3_photo.png": "/f2e-election-person/static/media/a3_photo.a0eb185798a5c67a868f.png",
     "static/media/a4_photo.png": "/f2e-election-person/static/media/a4_photo.b276e2a9a4e8ac59ba78.png",
     "static/media/banner.png": "/f2e-election-person/static/media/banner.d599170e5930b881061b.png",
+    "static/media/idea_phone.png": "/f2e-election-person/static/media/idea_phone.dfb03fb844873bb3836b.png",
     "static/media/share_email.png": "/f2e-election-person/static/media/share_email.cfb4dde0fd78a5d9c330.png",
     "static/media/p1_photo.png": "/f2e-election-person/static/media/p1_photo.564469f9c1ffc79ea4d9.png",
     "static/media/loading.gif": "/f2e-election-person/static/media/loading.da82d7c85533cd49e05a.gif",
     "static/media/p2_photo.png": "/f2e-election-person/static/media/p2_photo.290e2949966456f8528b.png",
     "static/media/p3_photo.png": "/f2e-election-person/static/media/p3_photo.70dc62c344431cda2488.png",
+    "static/media/banner_ipad.png": "/f2e-election-person/static/media/banner_ipad.d61d96697d0aca01245e.png",
+    "static/media/banner_phone.png": "/f2e-election-person/static/media/banner_phone.bb11d498322f2f6ab092.png",
     "static/media/donate_photo.png": "/f2e-election-person/static/media/donate_photo.bb7586da9c74b1e11bd8.png",
     "static/media/email.png": "/f2e-election-person/static/media/email.0f6285a2f313d6cb8575.png",
+    "static/media/idea.webp": "/f2e-election-person/static/media/idea.962e17dbc85798db5dd5.webp",
+    "static/media/a2_photo.webp": "/f2e-election-person/static/media/a2_photo.e9cfbdef8143c415a619.webp",
+    "static/media/a1_photo.webp": "/f2e-election-person/static/media/a1_photo.9d02c744187b0304b582.webp",
     "static/media/banner.webp": "/f2e-election-person/static/media/banner.d76047089785476a7740.webp",
+    "static/media/a4_photo.webp": "/f2e-election-person/static/media/a4_photo.c950fda924c422f93f97.webp",
+    "static/media/a3_photo.webp": "/f2e-election-person/static/media/a3_photo.b805c4815e8b6bec5228.webp",
     "static/media/brand.svg": "/f2e-election-person/static/media/brand.92fb5862b070fab2aa7910a75740ffd8.svg",
     "static/media/icon_ig.svg": "/f2e-election-person/static/media/icon_ig.1ee2839f396d033ddae1d5059745fa91.svg",
     "static/media/icon_line.svg": "/f2e-election-person/static/media/icon_line.5324ef17f842b831cfca8ea4cd7cf97d.svg",
@@ -27,12 +36,12 @@
     "static/media/cancel.svg": "/f2e-election-person/static/media/cancel.3b4595bedfaf19c913f2a08ecfa3da06.svg",
     "static/media/icon_fb.svg": "/f2e-election-person/static/media/icon_fb.febfb3ec4baf13bc0413d21bbe655cc7.svg",
     "static/media/control.svg": "/f2e-election-person/static/media/control.4718fa93b895c33c73e28e2799cd64e2.svg",
-    "main.11f7d28b.css.map": "/f2e-election-person/static/css/main.11f7d28b.css.map",
-    "main.529deaa1.js.map": "/f2e-election-person/static/js/main.529deaa1.js.map",
+    "main.07e7c8e0.css.map": "/f2e-election-person/static/css/main.07e7c8e0.css.map",
+    "main.fe44f0ee.js.map": "/f2e-election-person/static/js/main.fe44f0ee.js.map",
     "787.99739571.chunk.js.map": "/f2e-election-person/static/js/787.99739571.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11f7d28b.css",
-    "static/js/main.529deaa1.js"
+    "static/css/main.07e7c8e0.css",
+    "static/js/main.fe44f0ee.js"
   ]
 }
