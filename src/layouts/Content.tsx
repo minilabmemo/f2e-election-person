@@ -122,8 +122,8 @@ export const Content = () => {
 
         </div>
       </div>
-      <div className="news-ticker">
-        <h3 className="marquee-text matou">為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望</h3>
+      <div className="news-ticker fadeIn-delay-3s">
+        <h3 className="marquee-text matou">為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望。為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望。為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望。</h3>
       </div>
 
       <section className="bg-orange section-space" id="idea">

@@ -4,10 +4,18 @@
     transform: translateX(100vw);
   }
 
+  /* 8% {
 
+    transform: translateX(0);
+  }
+
+  8% {
+
+    transform: translateX(0);
+  } */
 
   100% {
-    transform: translateX(-100vw);
+    transform: translateX(-190vw);
   }
 }
 
