@@ -70,12 +70,12 @@ main {
 }
 
 .banner-photo {
+  height: 538px;
 
-
-  picture {
-
-    img {}
-
+  img {
+    display: block;
+    max-width: 100%;
+    height: 538px;
   }
 }
 

@@ -35,6 +35,7 @@
 
   0% {
     opacity: 1;
+    display: block;
   }
 
   25% {
