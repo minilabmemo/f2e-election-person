@@ -25,12 +25,7 @@ main {
   flex-direction: column;
   gap: $space-16;
 
-  .photo {
-    img {
-      vertical-align: bottom;
-    }
 
-  }
 
   .title-wrap {
     display: flex;
@@ -74,6 +69,15 @@ main {
 
 }
 
+.banner-photo {
+
+
+  picture {
+
+    img {}
+
+  }
+}
 
 .shadow {
   border: 1px solid $white;
@@ -135,8 +139,11 @@ main {
 
   .right {
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
     align-items: center;
+    object-fit: cover;
+
+
   }
 
   .left {
