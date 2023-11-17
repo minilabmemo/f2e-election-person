@@ -20,6 +20,11 @@
   }
 }
 
+.fadeIn-delay-500ms {
+  opacity: 0;
+  animation: 1s fadeIn .5s linear forwards;
+}
+
 .fadeIn-delay-1s {
   opacity: 0;
   animation: 1s fadeIn 1s linear forwards;

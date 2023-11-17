@@ -1,6 +1,7 @@
 
 import "./Content.scss";
 import banner_photo from "../assets/images/banner.png"
+import banner_photo_webp from "../assets/images/banner.webp"
 import idea from "../assets/images/idea.png" //TODO
 import { Articles } from "../components/Articles";
 
@@ -19,6 +20,7 @@ import { ServiceItem } from "../utils/services_config";
 
 
 export const Content = () => {
+  const ipad768 = getComputedStyle(document.documentElement).getPropertyValue('--ipad-768px');
 
   const [ref1, inView1] = useInView({ triggerOnce: true, });
   const [ref2, inView2] = useInView({ triggerOnce: true, });
@@ -69,6 +71,9 @@ export const Content = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+
+
   return (
     <main>
       <div className="banner">
@@ -78,7 +83,16 @@ export const Content = () => {
           <div className="tag bg-primary m-r-16"> <div className="text">2024 立委參選人</div></div>
           <PersonBadge />
         </div>
-        <div className="photo fadeIn-delay-3s "><img src={banner_photo} alt="banner_photo" /></div>
+        <div className="photo fadeIn-delay-3s ">
+          <picture>
+            <source
+              media={`(min-width: ${ipad768})`}
+              srcSet={banner_photo_webp}
+              type="image/webp" />
+            <img src={banner_photo} alt="banner_photo" />
+          </picture>
+
+        </div>
       </div>
       <div className="news-ticker">
         <h3 className="marquee-text matou">為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望</h3>
