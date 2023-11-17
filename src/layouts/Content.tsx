@@ -5,7 +5,10 @@ import banner_ipad from "../assets/images/banner_ipad.png"
 import banner_phone from "../assets/images/banner_phone.png"
 import banner_photo_webp from "../assets/images/banner.webp"
 
-import idea from "../assets/images/idea.png" //TODO
+import idea_webp from "../assets/images/idea.webp"
+import idea from "../assets/images/idea.png"
+import idea_ipad from "../assets/images/idea_ipad.png"
+import idea_phone from "../assets/images/idea_phone.png"
 import { Articles } from "../components/Articles";
 
 import { PersonBadge } from "../components/PersonBadge";
@@ -124,8 +127,24 @@ export const Content = () => {
             <div className="content">畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的 GDP 經濟帶來巨大效益。
               因此，我期望能在立法院內推進這些政策，確保每一隻貓咪都能得到他們應有的照顧，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。</div>
           </div>
-          <div className="right"> <img src={idea} alt="idea_photo" /></div>
+          <div className="right">
 
+            <picture>
+              <source
+                media={`${pictureLarge}`}
+                srcSet={idea_webp}
+                type="image/webp" />
+              <source
+                media={`${pictureMedium}`}
+                srcSet={idea_ipad}
+                type="image/png" />
+              <source
+                media={`${pictureSmall}`}
+                srcSet={idea_phone}
+                type="image/png" />
+              <img src={idea} alt="idea_photo" />
+            </picture>
+          </div>
         </div>
 
       </section>
