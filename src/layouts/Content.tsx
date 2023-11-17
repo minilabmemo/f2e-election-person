@@ -1,7 +1,18 @@
 
 import "./Content.scss";
 import banner_photo from "../assets/images/banner.png"
-import idea from "../assets/images/idea.png" //TODO
+import banner_ipad from "../assets/images/banner_ipad.png"
+import banner_phone from "../assets/images/banner_phone.png"
+
+import banner_photo_webp from "../assets/images/banner.webp"
+import banner_ipad_webp from "../assets/images/banner_ipad.webp"
+import banner_phone_webp from "../assets/images/banner_phone.webp"
+import idea_webp from "../assets/images/idea.webp"
+import idea_ipad_webp from "../assets/images/idea_ipad.webp"
+import idea_phone_webp from "../assets/images/idea_phone.webp"
+import idea from "../assets/images/idea.png"
+import idea_ipad from "../assets/images/idea_ipad.png"
+import idea_phone from "../assets/images/idea_phone.png"
 import { Articles } from "../components/Articles";
 
 import { PersonBadge } from "../components/PersonBadge";
@@ -19,6 +30,9 @@ import { ServiceItem } from "../utils/services_config";
 
 
 export const Content = () => {
+  const pictureLarge = getComputedStyle(document.documentElement).getPropertyValue('--picture-large');
+  const pictureMedium = getComputedStyle(document.documentElement).getPropertyValue('--picture-medium');
+  const pictureSmall = getComputedStyle(document.documentElement).getPropertyValue('--picture-small');
 
   const [ref1, inView1] = useInView({ triggerOnce: true, });
   const [ref2, inView2] = useInView({ triggerOnce: true, });
@@ -69,19 +83,47 @@ export const Content = () => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+
+
   return (
     <main>
       <div className="banner">
         <div className="m-t-large"></div>
-        <h1 className="clip-text matou title-wrap fadeIn-delay-3s "> <div>台灣的明天 </div> <div>&nbsp;喵先鋪路</div></h1>
-        <div className="group fadeIn-delay-4s ">
+        <h1 className="clip-text matou title-wrap fadeIn-delay-2s "> <div>台灣的明天 </div> <div>&nbsp;喵先鋪路</div></h1>
+        <div className="group fadeIn-delay-3s  ">
           <div className="tag bg-primary m-r-16"> <div className="text">2024 立委參選人</div></div>
           <PersonBadge />
         </div>
-        <div className="photo fadeIn-delay-5s "><img src={banner_photo} alt="banner_photo" /></div>
+        <div className="banner-photo  fadeIn-delay-3s ">
+          <picture>
+            <source
+              media={`${pictureLarge}`}
+              srcSet={banner_photo_webp}
+              type="image/webp" />
+            <source
+              media={`${pictureMedium}`}
+              srcSet={banner_ipad_webp}
+              type="image/webp" />
+            <source
+              media={`${pictureMedium}`}
+              srcSet={banner_ipad}
+              type="image/png" />
+            <source
+              media={`${pictureSmall}`}
+              srcSet={banner_phone_webp}
+              type="image/webp" />
+            <source
+              media={`${pictureSmall}`}
+              srcSet={banner_phone}
+              type="image/png" />
+            <img src={banner_photo} alt="banner_photo" width="724px" height="538px" />
+          </picture>
+
+        </div>
       </div>
-      <div className="news-ticker">
-        <h3 className="marquee-text matou">為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望</h3>
+      <div className="news-ticker fadeIn-delay-3s">
+        <h3 className="marquee-text matou">為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望。為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望。為喵星人，護台灣！從喵的眼中，看見台灣！喵的未來，人的希望。</h3>
       </div>
 
       <section className="bg-orange section-space" id="idea">
@@ -97,8 +139,31 @@ export const Content = () => {
             <div className="content">畢竟，民眾的身心健康與工作熱情是推動經濟的核心動力。透過完善的貓咪福利政策，為台灣的 GDP 經濟帶來巨大效益。
               因此，我期望能在立法院內推進這些政策，確保每一隻貓咪都能得到他們應有的照顧，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。</div>
           </div>
-          <div className="right"> <img src={idea} alt="idea_photo" /></div>
-
+          <div className="right">
+            <picture>
+              <source
+                media={`${pictureLarge}`}
+                srcSet={idea_webp}
+                type="image/webp" />
+              <source
+                media={`${pictureMedium}`}
+                srcSet={idea_ipad_webp}
+                type="image/webp" />
+              <source
+                media={`${pictureMedium}`}
+                srcSet={idea_ipad}
+                type="image/png" />
+              <source
+                media={`${pictureSmall}`}
+                srcSet={idea_phone_webp}
+                type="image/webp" />
+              <source
+                media={`${pictureSmall}`}
+                srcSet={idea_phone}
+                type="image/png" />
+              <img src={idea} alt="idea_photo" width="648px" height="535px" />
+            </picture>
+          </div>
         </div>
 
       </section>

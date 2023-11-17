@@ -20,9 +20,24 @@
   }
 }
 
-.fadeIn-delay-2 {
+.fadeIn-delay-500ms {
+  opacity: 0;
+  animation: 1s fadeIn .5s linear forwards;
+}
+
+.fadeIn-delay-1s {
+  opacity: 0;
+  animation: 1s fadeIn 1s linear forwards;
+}
+
+.fadeIn-delay-2s {
   opacity: 0;
   animation: 1s fadeIn 2s linear forwards;
+}
+
+.fadeIn-delay-2-5s {
+  opacity: 0;
+  animation: 1s fadeIn 2.5s linear forwards;
 }
 
 .fadeIn-delay-3s {

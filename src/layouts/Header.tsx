@@ -15,7 +15,7 @@ export const Header = () => {
 
   return (
     <header className='header  '>
-      <div className='head fadeIn-delay-2'>
+      <div className='head fadeIn-delay-500ms'>
         <a href='/'>
           <div className="logo-block"><img src={brand} alt="brand" /></div></a>
         <nav className="menu">

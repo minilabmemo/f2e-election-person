@@ -106,7 +106,7 @@ export const Polices: React.FC<ItemsProps> = ({ openModal }) => {
                 <h4>{item.title}</h4>
                 {item.sub_title && <h4>{item.sub_title}</h4>}
                 <div className="m-b-16"></div>
-                <div onClick={() => handleClick(item, index)}> <Button className="text-white  bg-orange-dark">查看</Button></div>
+                <div onClick={() => handleClick(item, index)}> <Button className="text-white  bg-orange-dark f-w-700">查看</Button></div>
 
               </div>
 

@@ -9,13 +9,15 @@ interface ModalProps {
 
 export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children }) => {
   return isOpen ? (
-    <div className="modal-overlay">
-      <div className="modal">
-        <button className="close-button" onClick={onClose}>
-          <img src={cancel} alt="cancel" />
-        </button>
-        {children}
+    <>
+      <div className="modal-overlay" >
+        <div className="modal">
+          <button className="close-button" onClick={onClose}>
+            <img src={cancel} alt="cancel" />
+          </button>
+          {children}
+        </div>
       </div>
-    </div>
+    </>
   ) : null;
 };

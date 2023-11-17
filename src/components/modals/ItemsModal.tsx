@@ -121,7 +121,10 @@ function ServicesModalStyle({ selectedItem, selectedIndex }: { selectedItem: Ser
             )
               :
               <>
-                <div className="share_img_wrap">    <img src={share_email} alt="share_email" /></div>
+
+                <div className="share_img_wrap">
+                  <img src={share_email} alt="share_email" />
+                </div>
 
               </>
             }
@@ -171,7 +174,7 @@ function ServicesModalStyle({ selectedItem, selectedIndex }: { selectedItem: Ser
                 <h5 className="title">自訂贊助金額</h5>
                 <input type="text" className="service_input" placeholder="NT$ 輸入金額" />
               </div>
-              <div className="service_btn bg-orang-dark ">前往捐款</div>
+              <div className="service_btn bg-orang-dark f-w-600">前往捐款</div>
             </div>
           )
             :
@@ -185,7 +188,7 @@ function ServicesModalStyle({ selectedItem, selectedIndex }: { selectedItem: Ser
                 <input type="text" className="service_input" placeholder="手機" />
                 <h5 className="title">您的建言</h5>
                 <input type="text" className="service_input large" placeholder="輸入內容" />
-                <div className="service_btn bg-orang-dark ">送出意見</div>
+                <div className="service_btn bg-orang-dark f-w-600">送出意見</div>
               </div>
             )
           }
@@ -218,7 +221,7 @@ export const ItemsModal: React.FC<ItemsModalProps> = ({ isModalOpen, selectedIte
 
           </h2></div>
 
-          <div className="modal_content p-x-48 ">
+          <div className="modal_content p-x-48 p-b-32">
             {selectedItem && 'serviceProperty' in selectedItem ?
               (
 

@@ -16,8 +16,13 @@
   border-radius: $space-32;
   gap: $space-24;
 
+
   @include ipad-screen {
     padding: $space-40 $space-24;
+  }
+
+  @include phone-screen-576 {
+    width: 100%;
   }
 
   @include phone-screen {
