@@ -1,17 +1,8 @@
-@mixin container_center {
-  padding: 1.5rem;
-  color: $black;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  width: 80%;
-}
-
 @mixin set-font-size($size) {
   font-size: #{$size / 10}rem;
 }
 
 //use
 // .my-text {
-//   @include set-font-size(40); // 设置字体大小为4rem
+//   @include set-font-size(40); // 设置字体大小为 4rem
 // }

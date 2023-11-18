@@ -1,6 +1,6 @@
 import "./Articles.scss";
-import { ArticleItem, articleItems } from "../utils/articles_config";
-import Button from "./btns/Button";
+import { ArticleItem, articleItems } from "../../utils/articles_config";
+import Button from "../btns/Button";
 
 
 interface ArticlesProps {

@@ -13,7 +13,7 @@ import idea_phone_webp from "../assets/images/idea_phone.webp"
 import idea from "../assets/images/idea.png"
 import idea_ipad from "../assets/images/idea_ipad.png"
 import idea_phone from "../assets/images/idea_phone.png"
-import { Articles } from "../components/Articles";
+import { Articles } from "../components/Articles/Articles";
 
 import { PersonBadge } from "../components/PersonBadge";
 
