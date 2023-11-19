@@ -141,13 +141,18 @@ main {
   .left {
 
     display: flex;
-    padding: var(--spacer-64, 64px) var(--spacer-40, 40px);
+    padding: $space-64 $space-40;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: var(--spacer-32, 32px);
     flex: 1 0 0;
     align-self: stretch;
+
+    @include phone-x-small-screen {
+      padding: $space-16;
+    }
 
     .title-group {
       display: flex;
