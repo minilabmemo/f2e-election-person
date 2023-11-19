@@ -1,4 +1,8 @@
 
+import './styles/normalize.css';
+import './styles/fonts/inter.css';
+import './styles/fonts/MantouSans.css';
+import './styles/style.scss';
 import { Content } from './layouts/Content';
 import { Footer } from './layouts/Footer';
 import { Header } from './layouts/Header';
