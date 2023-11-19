@@ -7,7 +7,7 @@ interface ArticlesProps {
   openModal: ((item: ArticleItem, index: number) => void) | null;
 }
 
-export const Articles: React.FC<ArticlesProps> = ({ openModal }) => {
+const Articles: React.FC<ArticlesProps> = ({ openModal }) => {
   const handleClick = (item: ArticleItem, index: number) => {
     if (openModal) {
       openModal(item, index);
@@ -50,3 +50,5 @@ export const Articles: React.FC<ArticlesProps> = ({ openModal }) => {
     </>
   );
 };
+
+export default Articles;
