@@ -40,26 +40,29 @@
 
 
 @keyframes showAndFadeOut {
-
   0% {
     opacity: 1;
+    visibility: visible;
 
   }
 
   25% {
     opacity: 1;
+    visibility: visible;
   }
 
   50% {
     opacity: 1;
+    visibility: visible;
   }
 
   100% {
     opacity: 0;
-    display: none;
-    /*最後一刻淡化且要整個消失才不會蓋到首頁功能*/
+    visibility: hidden;
+
   }
 }
+
 
 
 @keyframes slideInFromBottom {
